@@ -21,7 +21,7 @@ html {
   background: var(--color-menta);
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -32,8 +32,8 @@ body {
   font-size: 1.125rem; /* 18px */
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  overflow-x: hidden;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 /* NAV LATERAL */
@@ -120,15 +120,17 @@ body {
 
 .editorial-grid {
   display: grid;
-  grid-template-columns: 76px 1fr 0.6fr 1.2fr 1fr 0.7fr;
-  grid-template-rows: auto;
-  gap: 0;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 0;
   background: var(--color-menta);
   position: relative;
-  margin-left: 76px;
+  margin-left: 4.5rem;
   z-index: 1;
+  padding: 2.5rem 2vw 2.5rem 2vw;
+  box-sizing: border-box;
 }
 .hero {
   grid-column: 2 / 6;
@@ -343,13 +345,14 @@ body {
 .footer-brutal {
   width: 100vw;
   background: var(--color-menta);
-  padding: 2.5rem 0 1.2rem 76px;
+  padding: 2.5rem 0 1.2rem 4.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
   border-top: none;
-  z-index: 40;
+  margin-top: auto;
+  box-sizing: border-box;
 }
 .footer-line {
   width: 90%;
