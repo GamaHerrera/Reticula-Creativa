@@ -3,42 +3,52 @@
   --color-black: #000000;
   --color-white: #FFFFFF;
   --color-gray: #F5F5F5;
+  --color-text-dark: #191919;
+  --color-text-light: #FFFFFF;
   --font-main: 'Inter', Arial, sans-serif;
   --font-accent: 'Plus Jakarta Sans', Arial, sans-serif;
   --font-bold: 700;
   --font-regular: 400;
   --font-light: 300;
+  --radius-block: 1.5rem 0.5rem 2.5rem 0.5rem;
+  --shadow-block: 0.5rem 0.5rem 0 var(--color-black);
+  --shadow-block-hover: 0.7rem 1rem 0 var(--color-black);
 }
 
-html, body {
+html {
+  box-sizing: border-box;
+  font-size: 100%; /* 1rem = 16px por defecto */
+  background: var(--color-menta);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
   margin: 0;
   padding: 0;
   background: var(--color-menta);
   color: var(--color-black);
   font-family: var(--font-main);
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   min-height: 100vh;
-}
-
-body {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
+/* NAV LATERAL */
 .nav-lateral {
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
-  width: 76px;
+  width: 4.5rem;
   background: var(--color-menta);
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 30;
-  border-right: 1.5px solid var(--color-gray);
+  border-right: 0.09rem solid var(--color-gray);
   padding-top: 2rem;
   gap: 2.5rem;
 }

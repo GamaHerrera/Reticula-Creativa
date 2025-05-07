@@ -2,98 +2,101 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Retícula Creativa</title>
+  <title>Retícula Creativa – Comunidad de diseño visual latinoamericano</title>
+  <meta name="description" content="Retícula Creativa es una comunidad latinoamericana de diseño visual, inspiración editorial y colaboración creativa. Proyectos, talleres y encuentros para creativos.">
+  <meta name="keywords" content="diseño, comunidad, latinoamérica, editorial, creatividad, talleres, proyectos, zine, brutalismo, visual, digital">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Plus+Jakarta+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="nav-lateral">
-    <div class="logo-vertical">RC</div>
+  <nav class="nav-lateral" aria-label="Navegación principal" role="navigation">
+    <div class="logo-vertical" aria-label="Isologo RC" title="Retícula Creativa">RC</div>
     <ul>
-      <li><a href="#hero" title="Inicio"><span class="icon icon-inicio"></span></a></li>
-      <li><a href="#comunidad" title="Comunidad"><span class="icon icon-circulo"></span></a></li>
-      <li><a href="#proyectos" title="Proyectos"><span class="icon icon-cuadrado"></span></a></li>
-      <li><a href="#talleres" title="Talleres"><span class="icon icon-triangulo"></span></a></li>
-      <li><a href="#contacto" title="Contacto"><span class="icon icon-linea"></span></a></li>
+      <li><a href="#hero" title="Inicio" aria-label="Ir a inicio"><span class="icon icon-inicio" aria-hidden="true"></span></a></li>
+      <li><a href="#comunidad" title="Comunidad" aria-label="Ir a comunidad"><span class="icon icon-circulo" aria-hidden="true"></span></a></li>
+      <li><a href="#proyectos" title="Proyectos" aria-label="Ir a proyectos"><span class="icon icon-cuadrado" aria-hidden="true"></span></a></li>
+      <li><a href="#talleres" title="Talleres" aria-label="Ir a talleres"><span class="icon icon-triangulo" aria-hidden="true"></span></a></li>
+      <li><a href="#contacto" title="Contacto" aria-label="Ir a contacto"><span class="icon icon-linea" aria-hidden="true"></span></a></li>
     </ul>
   </nav>
-  <main class="editorial-grid">
-    <section class="hero" id="hero">
-      <div class="hero-bg-grid"></div>
+  <main class="editorial-grid" id="main-content" tabindex="-1">
+    <header class="hero" id="hero" role="banner">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
       <div class="hero-content">
         <h1><span class="overlap">Retícula</span><br><span class="overlap accent">Creativa</span></h1>
         <p class="hero-tag">Comunidad latinoamericana de diseño visual</p>
       </div>
-    </section>
-    <section class="bienvenida editorial-block" id="bienvenida">
-      <h2>Bienvenida</h2>
+    </header>
+    <section class="bienvenida editorial-block" id="bienvenida" aria-labelledby="bienvenida-title">
+      <h2 id="bienvenida-title">Bienvenida</h2>
       <p>Explora, comparte y experimenta el diseño desde una mirada fresca y colaborativa. Aquí, la creatividad rompe la cuadrícula y las ideas se cruzan en comunidad.</p>
     </section>
-    <section class="comunidad editorial-block" id="comunidad">
-      <h2>Comunidad</h2>
+    <section class="comunidad editorial-block" id="comunidad" aria-labelledby="comunidad-title">
+      <h2 id="comunidad-title">Comunidad</h2>
       <div class="comunidad-roles">
-        <div class="rol-block">
-          <span class="icon icon-circulo"></span>
+        <article class="rol-block" aria-label="Moderador">
+          <span class="icon icon-circulo" aria-hidden="true"></span>
           <span>Moderador</span>
-        </div>
-        <div class="rol-block">
-          <span class="icon icon-cuadrado"></span>
+        </article>
+        <article class="rol-block" aria-label="Autor o Autora">
+          <span class="icon icon-cuadrado" aria-hidden="true"></span>
           <span>Autor/a</span>
-        </div>
-        <div class="rol-block">
-          <span class="icon icon-triangulo"></span>
+        </article>
+        <article class="rol-block" aria-label="Visitante">
+          <span class="icon icon-triangulo" aria-hidden="true"></span>
           <span>Visitante</span>
-        </div>
+        </article>
       </div>
     </section>
-    <section class="proyectos editorial-block" id="proyectos">
-      <h2>Proyectos destacados</h2>
+    <section class="proyectos editorial-block" id="proyectos" aria-labelledby="proyectos-title">
+      <h2 id="proyectos-title">Proyectos destacados</h2>
       <div class="proyectos-grid">
-        <div class="proyecto-card">
+        <article class="proyecto-card">
           <span class="proyecto-titulo">Zine: "Forma y Fondo"</span>
           <span class="proyecto-descr">Exploraciones editoriales y visuales de la comunidad.</span>
-        </div>
-        <div class="proyecto-card">
+        </article>
+        <article class="proyecto-card">
           <span class="proyecto-titulo">Expo Digital</span>
           <span class="proyecto-descr">Galería colectiva de diseño latinoamericano.</span>
-        </div>
+        </article>
       </div>
     </section>
-    <section class="talleres editorial-block" id="talleres">
-      <h2>Talleres y encuentros</h2>
+    <section class="talleres editorial-block" id="talleres" aria-labelledby="talleres-title">
+      <h2 id="talleres-title">Talleres y encuentros</h2>
       <div class="talleres-lista">
-        <div class="taller-card">
+        <article class="taller-card">
           <span class="taller-titulo">Workshop: Diseño Brutalista</span>
           <span class="taller-descr">Experimenta el brutalismo suave en proyectos reales.</span>
-        </div>
-        <div class="taller-card">
+        </article>
+        <article class="taller-card">
           <span class="taller-titulo">Encuentro: Editorial Digital</span>
           <span class="taller-descr">Sesiones abiertas de creación y feedback.</span>
-        </div>
+        </article>
       </div>
     </section>
-    <section class="contacto editorial-block" id="contacto">
-      <h2>Contacto</h2>
+    <section class="contacto editorial-block" id="contacto" aria-labelledby="contacto-title">
+      <h2 id="contacto-title">Contacto</h2>
       <p>Escríbenos a <a href="mailto:hola@reticulacreativa.com">hola@reticulacreativa.com</a> o síguenos en redes:</p>
       <div class="redes-contacto">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram" rel="noopener noreferrer">Instagram</a>
+        <a href="#" aria-label="Twitter" rel="noopener noreferrer">Twitter</a>
+        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </section>
   </main>
-  <footer class="footer-brutal">
-    <div class="footer-line"></div>
-    <div class="footer-links">
+  <footer class="footer-brutal" role="contentinfo">
+    <div class="footer-line" aria-hidden="true"></div>
+    <nav class="footer-links" aria-label="Enlaces de pie de página">
       <a href="#hero">Inicio</a>
       <a href="#comunidad">Comunidad</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#talleres">Talleres</a>
       <a href="#contacto">Contacto</a>
-    </div>
+    </nav>
     <div class="footer-copy">© 2025 Retícula Creativa</div>
   </footer>
 </body>
