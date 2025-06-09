@@ -1,54 +1,72 @@
-# Retícula Creativa - Sitio Web del Estudio Creativo
+# Retícula Creativa - Sitio Web Oficial
 
-Bienvenido al repositorio del sitio web de **Retícula Creativa**, un estudio de diseño que combina creatividad y estrategia para crear experiencias visuales únicas.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-deploy-id/deploy-status)](https://app.netlify.com/sites/tu-sitio)
 
-## 🎨 Características
+Bienvenido al repositorio del sitio web oficial de **Retícula Creativa**, una comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI. Nuestra misión es reunir voces diversas de Latinoamérica para expresarse, aprender y conectar mediante el diseño.
 
-- **Diseño Moderno y Minimalista**: Interfaz limpia con un enfoque en la tipografía y el espacio en blanco.
+## 🌟 Nuestra Comunidad
+
+- **Diversidad Creativa**: Celebramos todas las formas de expresión visual y las diferentes perspectivas del diseño.
+- **Comunidad Activa**: Un espacio para compartir conocimiento, experiencias y crecer juntos como profesionales.
+- **Recursos Compartidos**: Acceso a herramientas, tutoriales y materiales para el desarrollo profesional continuo.
+
+## 🚀 Características del Sitio
+
+- **Diseño Moderno y Accesible**: Interfaz limpia con enfoque en la experiencia del usuario y accesibilidad.
 - **Totalmente Responsivo**: Se adapta perfectamente a cualquier dispositivo móvil, tableta o escritorio.
-- **Rendimiento Optimizado**: Código optimizado para una carga rápida.
-- **Animaciones Suaves**: Efectos sutiles para mejorar la experiencia del usuario.
-- **Formulario de Contacto Funcional**: Fácil de usar para que los visitantes se pongan en contacto.
+- **Rendimiento Optimizado**: Código optimizado para una carga rápida y eficiente.
+- **Blog y Recursos**: Contenido valioso para la comunidad de diseñadores.
+- **Portafolio Comunitario**: Muestra el trabajo de los miembros de nuestra comunidad.
 
-## 🚀 Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
-- HTML5 semántico
-- CSS3 con variables CSS personalizadas
-- JavaScript vanilla para la interactividad
-- [MixItUp](https://www.kunkalabs.com/mixitup/) para el filtrado del portafolio
-- [ScrollReveal](https://scrollrevealjs.org/) para animaciones al hacer scroll
-- [Box Icons](https://boxicons.com/) para iconos
-- [Google Fonts](https://fonts.google.com/) para la tipografía Poppins
+- **Frontend**: HTML5 semántico, CSS3 con variables personalizadas, JavaScript (ES6+)
+- **Frameworks y Librerías**:
+  - [Vite](https://vitejs.dev/) - Entorno de desarrollo frontend
+  - [PostCSS](https://postcss.org/) - Procesamiento de CSS
+  - [Font Awesome](https://fontawesome.com/) - Iconos y elementos de interfaz
+  - [Google Fonts](https://fonts.google.com/) - Fuentes tipográficas
+  - [ScrollReveal](https://scrollrevealjs.org/) - Animaciones al hacer scroll
 
-## 🛠️ Instalación
+## 📦 Estructura del Proyecto
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/reticula-creativa.git
-   ```
+```
+reticula-creativa/
+├── index.html          # Página principal
+├── styles.css          # Estilos principales
+├── main.js             # Funcionalidad JavaScript
+├── assets/             # Recursos multimedia
+│   ├── images/        # Imágenes del sitio
+│   └── fonts/         # Fuentes personalizadas
+├── manifest.json       # Configuración PWA
+└── netlify.toml        # Configuración de despliegue
+```
 
-2. Navega al directorio del proyecto:
-   ```bash
-   cd reticula-creativa
-   ```
+## 🚀 Cómo Contribuir
 
-3. Abre el archivo `index.html` en tu navegador preferido o utiliza un servidor local como Live Server de VSCode.
+Apreciamos las contribuciones de la comunidad. Si deseas contribuir:
 
-## 🎨 Personalización
+1. Haz un fork del repositorio
+2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
+3. Realiza tus cambios y haz commit de ellos (`git commit -am 'Añade nueva característica'`)
+4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
+5. Abre un Pull Request
 
-### Colores
-Puedes personalizar la paleta de colores modificando las variables CSS en el archivo `styles.css`:
+## 📝 Licencia
 
-```css
-:root {
-    --first-color: #FF6B6B;      /* Coral */
-    --second-color: #4ECDC4;     /* Aqua */
-    --third-color: #C3BCE3;      /* Lavanda */
-    --accent-color: #FFE66D;     /* Amarillo pastel */
-    --text-color: #333333;       /* Texto principal */
-    --text-color-light: #666666; /* Texto secundario */
-    --body-color: #FFFFFF;       /* Fondo */
-    --container-color: #FFFFFF;  /* Contenedores */
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
+
+## 🌐 En Vivo
+
+Visita el sitio en producción: [https://reticulacreativa.com](https://reticulacreativa.com)
+
+## 📬 Contacto
+
+¿Tienes preguntas o comentarios? Contáctanos a través de:
+
+- 📧 Email: hola@reticulacreativa.com
+- 💼 LinkedIn: [Retícula Creativa](https://linkedin.com/company/reticula-creativa)
+- 📸 Instagram: [@reticulacreativa](https://instagram.com/reticulacreativa)
 }
 ```
 

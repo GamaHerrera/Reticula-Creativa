@@ -49,14 +49,15 @@
                     <div class="hero__shape hero__shape--secondary"></div>
                 </div>
             </div>
-            <div class="hero__scroll">
+            <a href="#sobre-nosotros" class="hero__scroll" aria-label="Desplazarse hacia abajo">
                 <span>Desliza</span>
-                <i class="fas fa-arrow-down"></i>
-            </div>
+                <i class="fas fa-chevron-down"></i>
+                <div class="hero__scroll-line"></div>
+            </a>
         </section>
 
         <!-- Sobre Nosotros -->
-        <section class="about section container" id="sobre-nosotros">
+        <section class="about section container" id="sobre-nosotros" data-animate="pillars">
             <div class="section__header text-center">
                 <span class="section__subtitle">Nuestra Esencia</span>
                 <h2 class="section__title">Retícula Creativa</h2>
@@ -109,7 +110,7 @@
         </section>
 
         <!-- Portafolio -->
-        <section class="portfolio section" id="portafolio">
+        <section class="portfolio section" id="portafolio" data-animate="portfolio">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Nuestro Trabajo</span>
@@ -210,7 +211,7 @@
         </section>
 
         <!-- Blog -->
-        <section class="blog section" id="blog">
+        <section class="blog section" id="blog" data-animate="features">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Nuestro Blog</span>
@@ -433,7 +434,7 @@
         </section>
 
         <!-- Contacto -->
-        <section class="contact section" id="contacto">
+        <section class="contact section" id="contacto" data-animate="contact">
             <div class="container">
                 <div class="section__header text-center">
                     <span class="section__subtitle">Contáctanos</span>
@@ -642,5 +643,8 @@
     </a>
 
     <script src="main.js"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

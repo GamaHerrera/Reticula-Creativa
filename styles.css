@@ -5,14 +5,28 @@
   --secondary-color: #4ECDC4;
   --accent-color: #C3BCE3;
   --highlight-color: #FFE66D;
-  --background-color: #FAFAFA;
+  
+  /* Tema claro (por defecto) */
+  --bg-color: #ffffff;
   --text-color: #333333;
   --text-light: #666666;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --background-color: #FAFAFA;
   --white: #FFFFFF;
   --black: #000000;
   --gray-light: #F5F5F5;
   --gray-medium: #E0E0E0;
   --gray-dark: #757575;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.15);
+  
+  /* Transiciones */
+  --transition: all 0.3s ease;
   
   /* Tipografía */
   --body-font: 'Poppins', sans-serif;
@@ -345,6 +359,152 @@ button {
 .hero__image {
   position: relative;
   animation: float 3s ease-in-out infinite;
+}
+
+/* ===== SCROLL DOWN BUTTON ===== */
+.hero__scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: var(--z-tooltip);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.hero__scroll span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hero__scroll i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  animation: bounce 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.hero__scroll::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
+.hero__scroll:hover {
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.hero__scroll:hover span {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.hero__scroll:hover i {
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+  animation: none;
+  transform: translateY(5px);
+}
+
+.hero__scroll:hover::before {
+  width: 50px;
+  height: 50px;
+  opacity: 0.1;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Pulsating effect for scroll button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Scroll indicator line */
+.hero__scroll-line {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--primary-color), transparent);
+  opacity: 0.6;
+  animation: scrollLine 2s infinite;
+}
+
+@keyframes scrollLine {
+  0% {
+    height: 40px;
+    opacity: 0.6;
+  }
+  50% {
+    height: 60px;
+    opacity: 0.3;
+  }
+  100% {
+    height: 40px;
+    opacity: 0.6;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero__scroll {
+    bottom: 1.5rem;
+  }
+  
+  .hero__scroll span {
+    font-size: 0.8rem;
+  }
+  
+  .hero__scroll i {
+    font-size: 1.25rem;
+  }
+  
+  .hero__scroll::before {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .hero__scroll:hover::before {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .hero__image img {
