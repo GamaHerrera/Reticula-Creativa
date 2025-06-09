@@ -1929,13 +1929,10 @@ button {
     margin-bottom: 0;
   }
   
-  .footer__title {
-    margin-bottom: 1.25rem;
-  }
 }
 
 /* ===== RESPONSIVE ===== */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
   .nav__menu {
     position: fixed;
     top: 0;
@@ -2161,7 +2158,371 @@ button {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+}
+
+/* ===== MEJORAS DE EXPERIENCIA ===== */
+/* Transiciones suaves para enlaces y botones */
+a, button, .btn, .nav__link, .footer__link, .social__link {
+    transition: all 0.3s ease;
+}
+
+/* Efecto de escala en tarjetas al hacer hover */
+.card, .portfolio__item, .blog__card, .testimonial__card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .portfolio__item:hover, .blog__card:hover, .testimonial__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Efecto de opacidad en imágenes */
+.portfolio__img, .blog__img {
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.portfolio__item:hover .portfolio__img,
+.blog__card:hover .blog__img {
+    opacity: 0.9;
+}
+
+/* Mejoras en los botones */
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about.section {
+    padding: 4rem 0 2rem;
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.about__pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.about__pillar {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.about__pillar:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.about__pillar-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.about__pillar-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.about__pillar-text {
+    color: var(--text-light);
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.about__cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about__image {
+    position: relative;
+    height: 100%;
+    max-height: 400px;
+}
+
+.about__img {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 100%;
+}
+
+.about__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about__shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    top: -8px;
+    right: -8px;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about__image {
+        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
+        max-height: 350px;
+    }
+    
+    .about__pillars {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+    }
+    
+    .about__pillar {
+        padding: 0.8rem;
+    }
+    
+    .about__pillar-icon {
+        font-size: 1.3rem;
+    }
+    
+    .about__pillar-title {
+        font-size: 1rem;
+    }
+    
+    .about__pillar-text {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 768px) {
+    .about.section {
+        padding: 2rem 0;
+    }
+    
+    .about__pillars {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .about__cta {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 0.8rem;
+    }
+    
+    .about__cta .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 1rem;
+    }
+    
+    .about__image {
+        max-height: 300px;
+    }
+}
+
+/* Efecto de subrayado en enlaces de navegación */
+.nav__link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s;
+    margin-top: 2px;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+/* ===== TEMA OSCURO ===== */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --text-light: #b0b0b0;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+  --background-color: #0a0a0a;
+  --gray-light: #1e1e1e;
+  --gray-medium: #2d2d2d;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Transiciones suaves para el cambio de tema */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el botón de cambio de tema */
+.theme-switch {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 1.25rem;
+}
+
+.theme-switch:hover {
+  transform: scale(1.1);
+  background: var(--secondary-color);
+}
+
+.theme-switch i {
+  transition: transform 0.3s ease;
+}
+
+/* Efectos de hover mejorados para tarjetas */
+.card, .portfolio__item, .about__pillar, .downloads__card, .blog__card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.card:hover, .portfolio__item:hover, .about__pillar:hover, .downloads__card:hover, .blog__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efectos de hover para botones */
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Efecto de ondas al hacer clic */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.btn:active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  animation: ripple 1s ease-out;
+}
+
+/* Animaciones de scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media queries para sección about */
+@media (max-width: 1024px) {
   .about__content {
     order: 2;
   }

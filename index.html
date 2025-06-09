@@ -37,7 +37,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero" id="inicio">
+        <section class="hero section fade-in" id="inicio">
             <div class="hero__container container grid">
                 <div class="hero__content">
                     <h1 class="hero__title">Diseño que <span>inspira</span> y <span>trasciende</span></h1>
@@ -57,7 +57,7 @@
         </section>
 
         <!-- Sobre Nosotros -->
-        <section class="about section container" id="sobre-nosotros" data-animate="pillars">
+        <section class="about section fade-in" id="sobre-nosotros" data-animate="pillars">
             <div class="section__header text-center">
                 <span class="section__subtitle">Nuestra Esencia</span>
                 <h2 class="section__title">Retícula Creativa</h2>
@@ -110,7 +110,7 @@
         </section>
 
         <!-- Portafolio -->
-        <section class="portfolio section" id="portafolio" data-animate="portfolio">
+        <section class="portfolio section fade-in" id="portafolio" data-animate="portfolio">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Nuestro Trabajo</span>
@@ -211,7 +211,7 @@
         </section>
 
         <!-- Blog -->
-        <section class="blog section" id="blog" data-animate="features">
+        <section class="blog section fade-in" id="blog" data-animate="features">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Nuestro Blog</span>
@@ -288,7 +288,7 @@
         </section>
 
         <!-- Descargas -->
-        <section class="downloads section" id="descargas">
+        <section class="downloads section fade-in" id="descargas">
             <div class="container">
                 <div class="section__header text-center">
                     <span class="section__subtitle">Recursos Gratuitos</span>
@@ -434,7 +434,7 @@
         </section>
 
         <!-- Contacto -->
-        <section class="contact section" id="contacto" data-animate="contact">
+        <section class="contact section fade-in" id="contacto" data-animate="contact">
             <div class="container">
                 <div class="section__header text-center">
                     <span class="section__subtitle">Contáctanos</span>
@@ -646,5 +646,10 @@
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="js/animations.js"></script>
+    
+    <!-- Botón de cambio de tema -->
+    <button class="theme-switch" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+    </button>
 </body>
 </html>
