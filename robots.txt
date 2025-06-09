@@ -1,0 +1,31 @@
+# Directrices para rastreo de motores de búsqueda
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://reticulacreativa.com/sitemap.xml
+
+# Deshabilitar la indexación de archivos de desarrollo y configuración
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /*.json
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Permitir rastreo de recursos necesarios
+Allow: /*.css$
+Allow: /*.js$
+Allow: /assets/
+
+# Bloquear páginas de administración y búsquedas
+Disallow: /admin/
+Disallow: /search/
+Disallow: /*?s=
+
+# Bloquear URLs con parámetros de sesión o identificadores
+Disallow: /*?*
+Allow: /*?sitemap=1$
+
+# Velocidad de rastreo (opcional, en peticiones por segundo)
+Crawl-delay: 10

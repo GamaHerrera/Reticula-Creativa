@@ -1,103 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Retícula Creativa – Comunidad de diseño visual latinoamericano</title>
-  <meta name="description" content="Retícula Creativa es una comunidad latinoamericana de diseño visual, inspiración editorial y colaboración creativa. Proyectos, talleres y encuentros para creativos.">
-  <meta name="keywords" content="diseño, comunidad, latinoamérica, editorial, creatividad, talleres, proyectos, zine, brutalismo, visual, digital">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Plus+Jakarta+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retícula Creativa - Estudio de Diseño</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <nav class="nav-lateral" aria-label="Navegación principal" role="navigation">
-    <div class="logo-vertical" aria-label="Isologo RC" title="Retícula Creativa">RC</div>
-    <ul>
-      <li><a href="#hero" title="Inicio" aria-label="Ir a inicio"><span class="icon icon-inicio" aria-hidden="true"></span></a></li>
-      <li><a href="#comunidad" title="Comunidad" aria-label="Ir a comunidad"><span class="icon icon-circulo" aria-hidden="true"></span></a></li>
-      <li><a href="#proyectos" title="Proyectos" aria-label="Ir a proyectos"><span class="icon icon-cuadrado" aria-hidden="true"></span></a></li>
-      <li><a href="#talleres" title="Talleres" aria-label="Ir a talleres"><span class="icon icon-triangulo" aria-hidden="true"></span></a></li>
-      <li><a href="#contacto" title="Contacto" aria-label="Ir a contacto"><span class="icon icon-linea" aria-hidden="true"></span></a></li>
-    </ul>
-  </nav>
-  <main class="editorial-grid" id="main-content" tabindex="-1">
-    <header class="hero" id="hero" role="banner">
-      <div class="hero-bg-grid" aria-hidden="true"></div>
-      <div class="hero-content">
-        <h1><span class="overlap">Retícula</span><br><span class="overlap accent">Creativa</span></h1>
-        <p class="hero-tag">Comunidad latinoamericana de diseño visual</p>
-      </div>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1>Retícula<span>Creativa</span></h1>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre Nosotros</a></li>
+                    <li class="nav__item"><a href="#portafolio" class="nav__link">Portafolio</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#descargas" class="nav__link">Descargas</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link btn btn--primary">Contacto</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
     </header>
-    <section class="bienvenida editorial-block" id="bienvenida" aria-labelledby="bienvenida-title">
-      <h2 id="bienvenida-title">Bienvenida</h2>
-      <p>Explora, comparte y experimenta el diseño desde una mirada fresca y colaborativa. Aquí, la creatividad rompe la cuadrícula y las ideas se cruzan en comunidad.</p>
-    </section>
-    <section class="comunidad editorial-block" id="comunidad" aria-labelledby="comunidad-title">
-      <h2 id="comunidad-title">Comunidad</h2>
-      <div class="comunidad-roles">
-        <article class="rol-block" aria-label="Moderador">
-          <span class="icon icon-circulo" aria-hidden="true"></span>
-          <span>Moderador</span>
-        </article>
-        <article class="rol-block" aria-label="Autor o Autora">
-          <span class="icon icon-cuadrado" aria-hidden="true"></span>
-          <span>Autor/a</span>
-        </article>
-        <article class="rol-block" aria-label="Visitante">
-          <span class="icon icon-triangulo" aria-hidden="true"></span>
-          <span>Visitante</span>
-        </article>
-      </div>
-    </section>
-    <section class="proyectos editorial-block" id="proyectos" aria-labelledby="proyectos-title">
-      <h2 id="proyectos-title">Proyectos destacados</h2>
-      <div class="proyectos-grid">
-        <article class="proyecto-card">
-          <span class="proyecto-titulo">Zine: "Forma y Fondo"</span>
-          <span class="proyecto-descr">Exploraciones editoriales y visuales de la comunidad.</span>
-        </article>
-        <article class="proyecto-card">
-          <span class="proyecto-titulo">Expo Digital</span>
-          <span class="proyecto-descr">Galería colectiva de diseño latinoamericano.</span>
-        </article>
-      </div>
-    </section>
-    <section class="talleres editorial-block" id="talleres" aria-labelledby="talleres-title">
-      <h2 id="talleres-title">Talleres y encuentros</h2>
-      <div class="talleres-lista">
-        <article class="taller-card">
-          <span class="taller-titulo">Workshop: Diseño Brutalista</span>
-          <span class="taller-descr">Experimenta el brutalismo suave en proyectos reales.</span>
-        </article>
-        <article class="taller-card">
-          <span class="taller-titulo">Encuentro: Editorial Digital</span>
-          <span class="taller-descr">Sesiones abiertas de creación y feedback.</span>
-        </article>
-      </div>
-    </section>
-    <section class="contacto editorial-block" id="contacto" aria-labelledby="contacto-title">
-      <h2 id="contacto-title">Contacto</h2>
-      <p>Escríbenos a <a href="mailto:hola@reticulacreativa.com">hola@reticulacreativa.com</a> o síguenos en redes:</p>
-      <div class="redes-contacto">
-        <a href="#" aria-label="Instagram" rel="noopener noreferrer">Instagram</a>
-        <a href="#" aria-label="Twitter" rel="noopener noreferrer">Twitter</a>
-        <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">LinkedIn</a>
-      </div>
-    </section>
-  </main>
-  <footer class="footer-brutal" role="contentinfo">
-    <div class="footer-line" aria-hidden="true"></div>
-    <nav class="footer-links" aria-label="Enlaces de pie de página">
-      <a href="#hero">Inicio</a>
-      <a href="#comunidad">Comunidad</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#talleres">Talleres</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="footer-copy">© 2025 Retícula Creativa</div>
-  </footer>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">Diseño que <span>inspira</span> y <span>trasciende</span></h1>
+                    <p class="hero__description">Creamos experiencias visuales únicas con un enfoque estratégico y creativo.</p>
+                    <a href="#portafolio" class="btn btn--primary">Ver Nuestro Trabajo</a>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__shape"></div>
+                    <div class="hero__shape hero__shape--secondary"></div>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span>Desliza</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section class="about section container" id="sobre-nosotros">
+            <div class="section__header">
+                <span class="section__subtitle">Sobre Nosotros</span>
+                <h2 class="section__title">Creando Conexiones a través del Diseño</h2>
+            </div>
+            <div class="about__container grid">
+                <div class="about__data">
+                    <p class="about__description">Somos un estudio creativo que combina estrategia, diseño y tecnología para crear soluciones visuales impactantes.</p>
+                    <div class="about__stats">
+                        <div class="about__stat">
+                            <h3>150+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="about__stat">
+                            <h3>50+</h3>
+                            <p>Clientes Satisfechos</p>
+                        </div>
+                        <div class="about__stat">
+                            <h3>10+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <div class="about__shape"></div>
+                    <div class="about__img">
+                        <img src="https://via.placeholder.com/500x400" alt="Equipo de Retícula Creativa">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portafolio -->
+        <section class="portfolio section" id="portafolio">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nuestro Trabajo</span>
+                    <h2 class="section__title">Portafolio</h2>
+                </div>
+                <div class="portfolio__filters">
+                    <span class="portfolio__filter active" data-filter="all">Todos</span>
+                    <span class="portfolio__filter" data-filter="web">Diseño Web</span>
+                    <span class="portfolio__filter" data-filter="branding">Branding</span>
+                    <span class="portfolio__filter" data-filter="graphic">Diseño Gráfico</span>
+                </div>
+                <div class="portfolio__container grid">
+                    <!-- Items will be dynamically loaded via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nuestro Blog</span>
+                    <h2 class="section__title">Artículos Recientes</h2>
+                </div>
+                <div class="blog__container grid">
+                    <!-- Blog posts will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Descargas -->
+        <section class="downloads section" id="descargas">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Recursos Gratuitos</span>
+                    <h2 class="section__title">Descargas</h2>
+                </div>
+                <div class="downloads__container grid">
+                    <div class="downloads__card">
+                        <i class="fas fa-paint-brush downloads__icon"></i>
+                        <h3 class="downloads__title">Kit de Inicio de Marca</h3>
+                        <p class="downloads__description">Todo lo que necesitas para comenzar tu identidad de marca.</p>
+                        <a href="#" class="btn btn--primary downloads__button">Descargar</a>
+                    </div>
+                    <div class="downloads__card">
+                        <i class="fas fa-mobile-alt downloads__icon"></i>
+                        <h3 class="downloads__title">Mockups de Dispositivos</h3>
+                        <p class="downloads__description">Presenta tus diseños de manera profesional.</p>
+                        <a href="#" class="btn btn--primary downloads__button">Descargar</a>
+                    </div>
+                    <div class="downloads__card">
+                        <i class="fas fa-palette downloads__icon"></i>
+                        <h3 class="downloads__title">Paletas de Color</h3>
+                        <p class="downloads__description">Colección de paletas de colores para tus proyectos.</p>
+                        <a href="#" class="btn btn--primary downloads__button">Descargar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact section" id="contacto">
+            <div class="container">
+                <div class="contact__container grid">
+                    <div class="contact__info">
+                        <div class="section__header">
+                            <span class="section__subtitle">Contacto</span>
+                            <h2 class="section__title">Hablemos de tu Proyecto</h2>
+                        </div>
+                        <p class="contact__description">¿Listo para llevar tu marca al siguiente nivel? ¡Nos encantaría saber de ti!</p>
+                        <div class="contact__data">
+                            <div class="contact__item">
+                                <i class="fas fa-envelope contact__icon"></i>
+                                <div>
+                                    <h3 class="contact__title">Email</h3>
+                                    <a href="mailto:hola@reticulacreativa.com" class="contact__link">hola@reticulacreativa.com</a>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <i class="fas fa-phone contact__icon"></i>
+                                <div>
+                                    <h3 class="contact__title">Teléfono</h3>
+                                    <a href="tel:+525551234567" class="contact__link">+52 55 5123 4567</a>
+                                </div>
+                            </div>
+                            <div class="contact__item">
+                                <i class="fas fa-map-marker-alt contact__icon"></i>
+                                <div>
+                                    <h3 class="contact__title">Ubicación</h3>
+                                    <span class="contact__link">Ciudad de México, México</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="#" class="contact__social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="contact__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="contact__social-link"><i class="fab fa-behance"></i></a>
+                            <a href="#" class="contact__social-link"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <form action="#" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input" required>
+                                <label for="" class="contact__label">Nombre</label>
+                            </div>
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input" required>
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input" required>
+                            <label for="" class="contact__label">Asunto</label>
+                        </div>
+                        <div class="contact__content">
+                            <textarea name="" id="" cols="30" rows="7" placeholder=" " class="contact__input contact__area" required></textarea>
+                            <label for="" class="contact__label">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Retícula<span>Creativa</span></a>
+                <p class="footer__description">Diseñamos experiencias visuales únicas que inspiran y conectan con tu audiencia.</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Enlaces Rápidos</h3>
+                <ul class="footer__links">
+                    <li><a href="#inicio" class="footer__link">Inicio</a></li>
+                    <li><a href="#sobre-nosotros" class="footer__link">Sobre Nosotros</a></li>
+                    <li><a href="#portafolio" class="footer__link">Portafolio</a></li>
+                    <li><a href="#blog" class="footer__link">Blog</a></li>
+                    <li><a href="#descargas" class="footer__link">Descargas</a></li>
+                    <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Servicios</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Diseño Web</a></li>
+                    <li><a href="#" class="footer__link">Branding</a></li>
+                    <li><a href="#" class="footer__link">Diseño Gráfico</a></li>
+                    <li><a href="#" class="footer__link">Marketing Digital</a></li>
+                    <li><a href="#" class="footer__link">Redes Sociales</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Newsletter</h3>
+                <p class="footer__description">Suscríbete para recibir noticias y actualizaciones.</p>
+                <form action="#" class="footer__newsletter">
+                    <input type="email" placeholder="Tu correo electrónico" class="footer__input" required>
+                    <button type="submit" class="footer__button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-behance"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="footer__copy-content container">
+                <p>&copy; 2023 Retícula Creativa. Todos los derechos reservados.</p>
+                <div class="footer__copy-links">
+                    <a href="#" class="footer__copy-link">Términos y Condiciones</a>
+                    <span>|</span>
+                    <a href="#" class="footer__copy-link">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script src="main.js"></script>
 </body>
 </html>
