@@ -57,32 +57,52 @@
 
         <!-- Sobre Nosotros -->
         <section class="about section container" id="sobre-nosotros">
-            <div class="section__header">
-                <span class="section__subtitle">Sobre Nosotros</span>
-                <h2 class="section__title">Creando Conexiones a través del Diseño</h2>
+            <div class="section__header text-center">
+                <span class="section__subtitle">Nuestra Esencia</span>
+                <h2 class="section__title">Retícula Creativa</h2>
+                <p class="section__description">Comunidad abierta de diseño visual en todas sus expresiones</p>
             </div>
             <div class="about__container grid">
-                <div class="about__data">
-                    <p class="about__description">Somos un estudio creativo que combina estrategia, diseño y tecnología para crear soluciones visuales impactantes.</p>
-                    <div class="about__stats">
-                        <div class="about__stat">
-                            <h3>150+</h3>
-                            <p>Proyectos Completados</p>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__description">Retícula Creativa es una comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI. Nuestra misión es reunir voces diversas de Latinoamérica para expresarse, aprender y conectar mediante el diseño.</p>
+                        
+                        <div class="about__pillars">
+                            <div class="about__pillar">
+                                <div class="about__pillar-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3 class="about__pillar-title">Diversidad Creativa</h3>
+                                <p class="about__pillar-text">Celebramos todas las formas de expresión visual y las diferentes perspectivas del diseño.</p>
+                            </div>
+                            
+                            <div class="about__pillar">
+                                <div class="about__pillar-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3 class="about__pillar-title">Comunidad Activa</h3>
+                                <p class="about__pillar-text">Un espacio para compartir conocimiento, experiencias y crecer juntos como profesionales.</p>
+                            </div>
+                            
+                            <div class="about__pillar">
+                                <div class="about__pillar-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3 class="about__pillar-title">Recursos Compartidos</h3>
+                                <p class="about__pillar-text">Acceso a herramientas, tutoriales y materiales para el desarrollo profesional continuo.</p>
+                            </div>
                         </div>
-                        <div class="about__stat">
-                            <h3>50+</h3>
-                            <p>Clientes Satisfechos</p>
-                        </div>
-                        <div class="about__stat">
-                            <h3>10+</h3>
-                            <p>Años de Experiencia</p>
-                        </div>
+                    </div>
+                    
+                    <div class="about__cta">
+                        <a href="#contacto" class="btn btn--primary">Únete a la Comunidad</a>
+                        <a href="#descargas" class="btn btn--outline">Explora Recursos</a>
                     </div>
                 </div>
                 <div class="about__image">
                     <div class="about__shape"></div>
                     <div class="about__img">
-                        <img src="https://via.placeholder.com/500x400" alt="Equipo de Retícula Creativa">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Comunidad de diseño Retícula Creativa">
                     </div>
                 </div>
             </div>
@@ -102,7 +122,89 @@
                     <span class="portfolio__filter" data-filter="graphic">Diseño Gráfico</span>
                 </div>
                 <div class="portfolio__container grid">
-                    <!-- Items will be dynamically loaded via JavaScript -->
+                    <!-- Proyecto 1 -->
+                    <article class="portfolio__item mix web">
+                        <div class="portfolio__image">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Diseño Web Corporativo" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <h3 class="portfolio__title">Sitio Web Corporativo</h3>
+                                <p class="portfolio__category">Diseño Web</p>
+                                <a href="#" class="portfolio__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="portfolio__item mix branding">
+                        <div class="portfolio__image">
+                            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1068&q=80" alt="Identidad de Marca" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <h3 class="portfolio__title">Identidad de Marca</h3>
+                                <p class="portfolio__category">Branding</p>
+                                <a href="#" class="portfolio__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="portfolio__item mix graphic">
+                        <div class="portfolio__image">
+                            <img src="https://images.unsplash.com/photo-1581094792680-3425aa00ecce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Diseño de Empaque" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <h3 class="portfolio__title">Diseño de Empaque</h3>
+                                <p class="portfolio__category">Diseño Gráfico</p>
+                                <a href="#" class="portfolio__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="portfolio__item mix web">
+                        <div class="portfolio__image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tienda en Línea" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <h3 class="portfolio__title">Tienda en Línea</h3>
+                                <p class="portfolio__category">Diseño Web</p>
+                                <a href="#" class="portfolio__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 5 -->
+                    <article class="portfolio__item mix branding">
+                        <div class="portfolio__image">
+                            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Manual de Marca" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <h3 class="portfolio__title">Manual de Marca</h3>
+                                <p class="portfolio__category">Branding</p>
+                                <a href="#" class="portfolio__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 6 -->
+                    <article class="portfolio__item mix graphic">
+                        <div class="portfolio__image">
+                            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1068&q=80" alt="Ilustración Digital" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <h3 class="portfolio__title">Ilustración Digital</h3>
+                                <p class="portfolio__category">Diseño Gráfico</p>
+                                <a href="#" class="portfolio__link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -115,7 +217,71 @@
                     <h2 class="section__title">Artículos Recientes</h2>
                 </div>
                 <div class="blog__container grid">
-                    <!-- Blog posts will be loaded dynamically -->
+                    <!-- Artículo 1 -->
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="https://images.unsplash.com/photo-1499750319107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tendencias de diseño web 2023" class="blog__img">
+                            <a href="#" class="blog__button">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="blog__content">
+                            <span class="blog__category">Diseño Web</span>
+                            <h3 class="blog__title">Tendencias de Diseño Web para 2023</h3>
+                            <p class="blog__description">Explora las últimas tendencias en diseño web que están dando forma al futuro del diseño digital este año.</p>
+                            <div class="blog__footer">
+                                <div class="blog__author">
+                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Autor" class="blog__author-img">
+                                    <span>María López</span>
+                                </div>
+                                <span class="blog__date">15 Mayo, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Estrategias de marketing digital" class="blog__img">
+                            <a href="#" class="blog__button">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="blog__content">
+                            <span class="blog__category">Marketing</span>
+                            <h3 class="blog__title">Estrategias de Marketing Digital para Emprendedores</h3>
+                            <p class="blog__description">Descubre cómo llevar tu negocio al siguiente nivel con estas estrategias de marketing digital probadas.</p>
+                            <div class="blog__footer">
+                                <div class="blog__author">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Autor" class="blog__author-img">
+                                    <span>Carlos Méndez</span>
+                                </div>
+                                <span class="blog__date">2 Junio, 2023</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 3 -->
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Branding efectivo" class="blog__img">
+                            <a href="#" class="blog__button">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="blog__content">
+                            <span class="blog__category">Branding</span>
+                            <h3 class="blog__title">Cómo Crear un Branding Efectivo para tu Marca</h3>
+                            <p class="blog__description">Aprende los principios fundamentales para desarrollar una identidad de marca sólida y memorable.</p>
+                            <div class="blog__footer">
+                                <div class="blog__author">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Autor" class="blog__author-img">
+                                    <span>Ana Torres</span>
+                                </div>
+                                <span class="blog__date">20 Mayo, 2023</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -123,29 +289,145 @@
         <!-- Descargas -->
         <section class="downloads section" id="descargas">
             <div class="container">
-                <div class="section__header">
+                <div class="section__header text-center">
                     <span class="section__subtitle">Recursos Gratuitos</span>
-                    <h2 class="section__title">Descargas</h2>
+                    <h2 class="section__title">Descargas Exclusivas</h2>
+                    <p class="section__description">Accede a recursos profesionales para impulsar tus proyectos creativos</p>
                 </div>
+                
+                <!-- Filtros -->
+                <div class="downloads__filters">
+                    <button class="downloads__filter active" data-filter="all">Todos</button>
+                    <button class="downloads__filter" data-filter="branding">Branding</button>
+                    <button class="downloads__filter" data-filter="ui">UI/UX</button>
+                    <button class="downloads__filter" data-filter="resources">Recursos</button>
+                </div>
+                
+                <!-- Tarjetas de descarga -->
                 <div class="downloads__container grid">
-                    <div class="downloads__card">
-                        <i class="fas fa-paint-brush downloads__icon"></i>
-                        <h3 class="downloads__title">Kit de Inicio de Marca</h3>
-                        <p class="downloads__description">Todo lo que necesitas para comenzar tu identidad de marca.</p>
-                        <a href="#" class="btn btn--primary downloads__button">Descargar</a>
+                    <!-- Tarjeta 1 -->
+                    <div class="downloads__card" data-category="branding">
+                        <div class="downloads__card-header">
+                            <div class="downloads__icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <span class="downloads__badge">Popular</span>
+                        </div>
+                        <div class="downloads__card-body">
+                            <h3 class="downloads__title">Kit de Inicio de Marca</h3>
+                            <p class="downloads__description">Todo lo que necesitas para comenzar tu identidad de marca profesional.</p>
+                            <ul class="downloads__features">
+                                <li><i class="fas fa-check"></i> Archivos editables</li>
+                                <li><i class="fas fa-check"></i> Guías de uso</li>
+                                <li><i class="fas fa-check"></i> Soporte técnico</li>
+                            </ul>
+                        </div>
+                        <div class="downloads__card-footer">
+                            <div class="downloads__meta">
+                                <span class="downloads__size">45 MB</span>
+                                <span class="downloads__format">ZIP</span>
+                            </div>
+                            <a href="#" class="btn btn--primary downloads__button">
+                                <span>Descargar</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="downloads__card">
-                        <i class="fas fa-mobile-alt downloads__icon"></i>
-                        <h3 class="downloads__title">Mockups de Dispositivos</h3>
-                        <p class="downloads__description">Presenta tus diseños de manera profesional.</p>
-                        <a href="#" class="btn btn--primary downloads__button">Descargar</a>
+                    
+                    <!-- Tarjeta 2 -->
+                    <div class="downloads__card" data-category="ui">
+                        <div class="downloads__card-header">
+                            <div class="downloads__icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="downloads__badge downloads__badge--new">Nuevo</span>
+                        </div>
+                        <div class="downloads__card-body">
+                            <h3 class="downloads__title">Mockups de Dispositivos</h3>
+                            <p class="downloads__description">Presenta tus diseños de manera profesional con estos mockups realistas.</p>
+                            <ul class="downloads__features">
+                                <li><i class="fas fa-check"></i> Varios dispositivos</li>
+                                <li><i class="fas fa-check"></i> Múltiples ángulos</li>
+                                <li><i class="fas fa-check"></i> Fácil de personalizar</li>
+                            </ul>
+                        </div>
+                        <div class="downloads__card-footer">
+                            <div class="downloads__meta">
+                                <span class="downloads__size">32 MB</span>
+                                <span class="downloads__format">PSD, AI</span>
+                            </div>
+                            <a href="#" class="btn btn--primary downloads__button">
+                                <span>Descargar</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="downloads__card">
-                        <i class="fas fa-palette downloads__icon"></i>
-                        <h3 class="downloads__title">Paletas de Color</h3>
-                        <p class="downloads__description">Colección de paletas de colores para tus proyectos.</p>
-                        <a href="#" class="btn btn--primary downloads__button">Descargar</a>
+                    
+                    <!-- Tarjeta 3 -->
+                    <div class="downloads__card" data-category="resources">
+                        <div class="downloads__card-header">
+                            <div class="downloads__icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <div class="downloads__card-body">
+                            <h3 class="downloads__title">Paletas de Color</h3>
+                            <p class="downloads__description">Colección de paletas de colores profesionales para tus proyectos.</p>
+                            <ul class="downloads__features">
+                                <li><i class="fas fa-check"></i> 20+ combinaciones</li>
+                                <li><i class="fas fa-check"></i> Códigos HEX/RGB</li>
+                                <li><i class="fas fa-check"></i> Guía de uso</li>
+                            </ul>
+                        </div>
+                        <div class="downloads__card-footer">
+                            <div class="downloads__meta">
+                                <span class="downloads__size">8 MB</span>
+                                <span class="downloads__format">AI, ASE, PDF</span>
+                            </div>
+                            <a href="#" class="btn btn--primary downloads__button">
+                                <span>Descargar</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
                     </div>
+                    
+                    <!-- Tarjeta 4 -->
+                    <div class="downloads__card" data-category="ui">
+                        <div class="downloads__card-header">
+                            <div class="downloads__icon">
+                                <i class="fas fa-icons"></i>
+                            </div>
+                        </div>
+                        <div class="downloads__card-body">
+                            <h3 class="downloads__title">Iconos Premium</h3>
+                            <p class="downloads__description">Paquete de iconos en formato vectorial para tus diseños web y móviles.</p>
+                            <ul class="downloads__features">
+                                <li><i class="fas fa-check"></i> 500+ iconos</li>
+                                <li><i class="fas fa-check"></i> Formatos SVG, PNG</li>
+                                <li><i class="fas fa-check"></i> Totalmente editables</li>
+                            </ul>
+                        </div>
+                        <div class="downloads__card-footer">
+                            <div class="downloads__meta">
+                                <span class="downloads__size">15 MB</span>
+                                <span class="downloads__format">SVG, PNG</span>
+                            </div>
+                            <a href="#" class="btn btn--primary downloads__button">
+                                <span>Descargar</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Llamado a la acción -->
+                <div class="downloads__cta text-center">
+                    <h3 class="downloads__cta-title">¿Buscas algo más específico?</h3>
+                    <p class="downloads__cta-text">Suscríbete a nuestro boletín para recibir recursos exclusivos cada mes.</p>
+                    <form class="downloads__cta-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn--primary">Suscribirme</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -153,120 +435,203 @@
         <!-- Contacto -->
         <section class="contact section" id="contacto">
             <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">Contáctanos</span>
+                    <h2 class="section__title">Hablemos de tu Proyecto</h2>
+                    <p class="section__description">¿Listo para llevar tu marca al siguiente nivel? Completa el formulario o contáctanos directamente.</p>
+                </div>
+                
                 <div class="contact__container grid">
+                    <!-- Información de contacto -->
                     <div class="contact__info">
-                        <div class="section__header">
-                            <span class="section__subtitle">Contacto</span>
-                            <h2 class="section__title">Hablemos de tu Proyecto</h2>
-                        </div>
-                        <p class="contact__description">¿Listo para llevar tu marca al siguiente nivel? ¡Nos encantaría saber de ti!</p>
-                        <div class="contact__data">
-                            <div class="contact__item">
-                                <i class="fas fa-envelope contact__icon"></i>
-                                <div>
-                                    <h3 class="contact__title">Email</h3>
-                                    <a href="mailto:hola@reticulacreativa.com" class="contact__link">hola@reticulacreativa.com</a>
-                                </div>
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="contact__item">
-                                <i class="fas fa-phone contact__icon"></i>
-                                <div>
-                                    <h3 class="contact__title">Teléfono</h3>
-                                    <a href="tel:+525551234567" class="contact__link">+52 55 5123 4567</a>
-                                </div>
-                            </div>
-                            <div class="contact__item">
-                                <i class="fas fa-map-marker-alt contact__icon"></i>
-                                <div>
-                                    <h3 class="contact__title">Ubicación</h3>
-                                    <span class="contact__link">Ciudad de México, México</span>
-                                </div>
+                            <div class="contact__card-content">
+                                <h3 class="contact__card-title">Correo Electrónico</h3>
+                                <a href="mailto:hola@reticulacreativa.com" class="contact__card-link">hola@reticulacreativa.com</a>
                             </div>
                         </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact__card-content">
+                                <h3 class="contact__card-title">Teléfono</h3>
+                                <a href="tel:+525551234567" class="contact__card-link">+52 55 5123 4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact__card-content">
+                                <h3 class="contact__card-title">Ubicación</h3>
+                                <address class="contact__card-text">Av. Paseo de la Reforma 123<br>Col. Juárez, Cuauhtémoc<br>Ciudad de México, 06600</address>
+                            </div>
+                        </div>
+                        
                         <div class="contact__social">
-                            <a href="#" class="contact__social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="contact__social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="contact__social-link"><i class="fab fa-behance"></i></a>
-                            <a href="#" class="contact__social-link"><i class="fab fa-dribbble"></i></a>
+                            <h3 class="contact__social-title">Síguenos</h3>
+                            <div class="contact__social-links">
+                                <a href="#" class="contact__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="contact__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="contact__social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                                <a href="#" class="contact__social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Formulario de contacto -->
                     <form action="#" class="contact__form">
-                        <div class="contact__inputs">
-                            <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input" required>
-                                <label for="" class="contact__label">Nombre</label>
+                        <div class="form__group">
+                            <div class="form__row">
+                                <div class="form__field">
+                                    <input type="text" id="name" class="form__input" required>
+                                    <label for="name" class="form__label">Nombre Completo</label>
+                                    <span class="form__line"></span>
+                                </div>
+                                <div class="form__field">
+                                    <input type="email" id="email" class="form__input" required>
+                                    <label for="email" class="form__label">Correo Electrónico</label>
+                                    <span class="form__line"></span>
+                                </div>
                             </div>
-                            <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input" required>
-                                <label for="" class="contact__label">Email</label>
+                            
+                            <div class="form__field">
+                                <input type="text" id="subject" class="form__input" required>
+                                <label for="subject" class="form__label">Asunto</label>
+                                <span class="form__line"></span>
+                            </div>
+                            
+                            <div class="form__field">
+                                <select id="service" class="form__select" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="web">Diseño Web</option>
+                                    <option value="branding">Branding</option>
+                                    <option value="graphic">Diseño Gráfico</option>
+                                    <option value="marketing">Marketing Digital</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                                <label for="service" class="form__label">¿En qué podemos ayudarte?</label>
+                                <span class="form__line"></span>
+                            </div>
+                            
+                            <div class="form__field">
+                                <textarea id="message" class="form__textarea" rows="5" required></textarea>
+                                <label for="message" class="form__label">Tu Mensaje</label>
+                                <span class="form__line"></span>
+                            </div>
+                            
+                            <div class="form__footer">
+                                <div class="form__privacy">
+                                    <input type="checkbox" id="privacy" class="form__checkbox" required>
+                                    <label for="privacy" class="form__privacy-text">Acepto la <a href="#" class="form__privacy-link">Política de Privacidad</a></label>
+                                </div>
+                                <button type="submit" class="btn btn--primary form__submit">
+                                    <span>Enviar Mensaje</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="contact__content">
-                            <input type="text" placeholder=" " class="contact__input" required>
-                            <label for="" class="contact__label">Asunto</label>
-                        </div>
-                        <div class="contact__content">
-                            <textarea name="" id="" cols="30" rows="7" placeholder=" " class="contact__input contact__area" required></textarea>
-                            <label for="" class="contact__label">Mensaje</label>
-                        </div>
-                        <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
                     </form>
+                </div>
+                
+                <!-- Mapa de ubicación -->
+                <div class="contact__map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8880382853557!2d-99.16782668561899!3d19.42702078689364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1623456789012!5m2!1ses-419!2smx" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        aria-label="Ubicación en mapa">
+                    </iframe>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__container container grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">Retícula<span>Creativa</span></a>
-                <p class="footer__description">Diseñamos experiencias visuales únicas que inspiran y conectan con tu audiencia.</p>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Enlaces Rápidos</h3>
-                <ul class="footer__links">
-                    <li><a href="#inicio" class="footer__link">Inicio</a></li>
-                    <li><a href="#sobre-nosotros" class="footer__link">Sobre Nosotros</a></li>
-                    <li><a href="#portafolio" class="footer__link">Portafolio</a></li>
-                    <li><a href="#blog" class="footer__link">Blog</a></li>
-                    <li><a href="#descargas" class="footer__link">Descargas</a></li>
-                    <li><a href="#contacto" class="footer__link">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Servicios</h3>
-                <ul class="footer__links">
-                    <li><a href="#" class="footer__link">Diseño Web</a></li>
-                    <li><a href="#" class="footer__link">Branding</a></li>
-                    <li><a href="#" class="footer__link">Diseño Gráfico</a></li>
-                    <li><a href="#" class="footer__link">Marketing Digital</a></li>
-                    <li><a href="#" class="footer__link">Redes Sociales</a></li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Newsletter</h3>
-                <p class="footer__description">Suscríbete para recibir noticias y actualizaciones.</p>
-                <form action="#" class="footer__newsletter">
-                    <input type="email" placeholder="Tu correo electrónico" class="footer__input" required>
-                    <button type="submit" class="footer__button">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-                <div class="footer__social">
-                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fab fa-behance"></i></a>
-                    <a href="#" class="footer__social-link"><i class="fab fa-dribbble"></i></a>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__grid">
+                    <!-- Columna 1: Logo y descripción -->
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo">Retícula<span>Creativa</span></a>
+                        <p class="footer__description">Diseñamos experiencias visuales únicas que inspiran y conectan con tu audiencia a través de soluciones creativas y estratégicas.</p>
+                        <div class="footer__social">
+                            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Columna 2: Enlaces rápidos -->
+                    <div class="footer__col">
+                        <h3 class="footer__title">Enlaces Rápidos</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#inicio" class="footer__link">Inicio</a></li>
+                            <li class="footer__item"><a href="#sobre-nosotros" class="footer__link">Sobre Nosotros</a></li>
+                            <li class="footer__item"><a href="#portafolio" class="footer__link">Portafolio</a></li>
+                            <li class="footer__item"><a href="#blog" class="footer__link">Blog</a></li>
+                            <li class="footer__item"><a href="#descargas" class="footer__link">Descargas</a></li>
+                            <li class="footer__item"><a href="#contacto" class="footer__link">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 3: Servicios -->
+                    <div class="footer__col">
+                        <h3 class="footer__title">Nuestros Servicios</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Diseño Web</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Branding Corporativo</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Diseño Gráfico</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Marketing Digital</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Redes Sociales</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Diseño de Apps</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 4: Newsletter -->
+                    <div class="footer__col">
+                        <h3 class="footer__title">Newsletter</h3>
+                        <p class="footer__text">Suscríbete para recibir noticias, ofertas especiales y actualizaciones directamente en tu bandeja de entrada.</p>
+                        
+                        <form action="#" class="footer__form">
+                            <div class="footer__form-group">
+                                <input type="email" placeholder="Tu correo electrónico" class="footer__input" required>
+                                <button type="submit" class="footer__submit" aria-label="Suscribirse">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="footer__privacy">
+                                <input type="checkbox" id="privacy" class="footer__checkbox" required>
+                                <label for="privacy" class="footer__privacy-text">Acepto la <a href="#" class="footer__privacy-link">Política de Privacidad</a></label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__copy">
-            <div class="footer__copy-content container">
-                <p>&copy; 2023 Retícula Creativa. Todos los derechos reservados.</p>
-                <div class="footer__copy-links">
-                    <a href="#" class="footer__copy-link">Términos y Condiciones</a>
-                    <span>|</span>
-                    <a href="#" class="footer__copy-link">Política de Privacidad</a>
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-content">
+                    <p class="footer__copyright">&copy; <span id="current-year">2023</span> Retícula Creativa. Todos los derechos reservados.</p>
+                    <div class="footer__legal">
+                        <a href="#" class="footer__legal-link">Términos y Condiciones</a>
+                        <span class="footer__divider">|</span>
+                        <a href="#" class="footer__legal-link">Política de Privacidad</a>
+                        <span class="footer__divider">|</span>
+                        <a href="#" class="footer__legal-link">Política de Cookies</a>
+                    </div>
                 </div>
             </div>
         </div>
