@@ -19,10 +19,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
-                    <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre Nosotros</a></li>
-                    <li class="nav__item"><a href="#portafolio" class="nav__link">Portafolio</a></li>
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="#descargas" class="nav__link">Descargas</a></li>
+                    <li class="nav__item"><a href="#eventos" class="nav__link">Eventos</a></li>
                     <li class="nav__item"><a href="#contacto" class="nav__link btn btn--primary">Contacto</a></li>
                 </ul>
                 <div class="nav__close" id="nav-close">
@@ -40,19 +38,65 @@
     <main>
         <!-- Hero Section -->
         <section class="hero section fade-in" id="inicio">
-            <div class="hero__container container grid">
-                <div class="hero__content">
-                    <h1 class="hero__title">Diseño que <span>inspira</span> y <span>trasciende</span></h1>
-                    <p class="hero__description">Creamos experiencias visuales únicas con un enfoque estratégico y creativo.</p>
-                    <a href="#portafolio" class="btn btn--primary">Ver Nuestro Trabajo</a>
+            <div class="hero__container container">
+                <div class="hero__header">
+                    <h1 class="hero__title">Explora el Mundo del <span>Diseño Gráfico</span></h1>
+                    <p class="hero__description">Descubre artículos, tutoriales y recursos para potenciar tu creatividad</p>
                 </div>
-                <div class="hero__image">
-                    <div class="hero__shape"></div>
-                    <div class="hero__shape hero__shape--secondary"></div>
+                
+                <!-- Grid de artículos destacados -->
+                <div class="featured-grid">
+                    <!-- Artículo principal -->
+                    <article class="featured-article featured-article--main">
+                        <div class="article-content">
+                            <span class="article-category">Tendencia</span>
+                            <h2>Las 10 Tendencias de Diseño que Dominarán 2024</h2>
+                            <p>Explora las tendencias visuales que están transformando la industria del diseño este año.</p>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80" alt="Tendencias de diseño 2024">
+                        </div>
+                    </article>
+                    
+                    <!-- Artículo secundario 1 -->
+                    <article class="featured-article">
+                        <div class="article-content">
+                            <span class="article-category">Tutorial</span>
+                            <h3>Guía de Tipografía para Principiantes</h3>
+                            <p>Aprende los fundamentos de la tipografía y cómo aplicarlos en tus diseños.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Artículo secundario 2 -->
+                    <article class="featured-article">
+                        <div class="article-content">
+                            <span class="article-category">Inspiración</span>
+                            <h3>Portafolios que Inspiran</h3>
+                            <p>Descubre los mejores portafolios de diseñadores que están marcando tendencia.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Artículo secundario 3 -->
+                    <article class="featured-article">
+                        <div class="article-content">
+                            <span class="article-category">Recursos</span>
+                            <h3>Herramientas Gratuitas para Diseñadores</h3>
+                            <p>Las mejores herramientas gratuitas para potenciar tu flujo de trabajo creativo.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="hero__cta">
+                    <a href="#blog" class="btn btn--primary">Ver todos los artículos</a>
                 </div>
             </div>
-            <a href="#sobre-nosotros" class="hero__scroll" aria-label="Desplazarse hacia abajo">
-                <span>Desliza</span>
+            
+            <a href="#blog" class="hero__scroll" aria-label="Ver más artículos">
+                <span>Ver más</span>
                 <i class="fas fa-chevron-down"></i>
                 <div class="hero__scroll-line"></div>
             </a>
