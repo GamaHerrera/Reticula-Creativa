@@ -766,6 +766,7 @@ button {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
 .blog__card:hover {
@@ -813,25 +814,71 @@ button {
 }
 
 .blog__content {
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.blog__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
 }
 
 .blog__category {
   display: inline-block;
-  background: var(--highlight-color);
-  color: var(--text-color);
-  font-size: var(--small-font-size);
-  font-weight: 600;
   padding: 0.25rem 0.75rem;
-  border-radius: 50px;
-  margin-bottom: 1rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.blog__category--tutorials {
+  background-color: rgba(78, 205, 196, 0.1);
+  color: #2a9d8f;
+}
+
+.blog__category--recursos {
+  background-color: rgba(255, 203, 107, 0.1);
+  color: #e9c46a;
+}
+
+.blog__category--inspiracion {
+  background-color: rgba(255, 107, 107, 0.1);
+  color: #e76f51;
+}
+
+.blog__category--tendencias {
+  background-color: rgba(155, 105, 255, 0.1);
+  color: #9c6bff;
+}
+
+.blog__category--diseno {
+  background-color: rgba(72, 202, 228, 0.1);
+  color: #48cae4;
+}
+
+.blog__category--branding {
+  background-color: rgba(236, 72, 153, 0.1);
+  color: #ec4899;
+}
+
+.blog__category--web {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
 }
 
 .blog__title {
   font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem;
   line-height: 1.4;
   transition: color 0.3s ease;
+  color: #1a1a1a;
 }
 
 .blog__card:hover .blog__title {
@@ -839,10 +886,20 @@ button {
 }
 
 .blog__description {
-  color: var(--text-light);
+  color: #6c757d;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
   line-height: 1.6;
+  min-height: 4.5em; /* Aprox 3 líneas de texto */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  text-overflow: ellipsis;
+  max-height: 4.8em;
 }
 
 .blog__footer {

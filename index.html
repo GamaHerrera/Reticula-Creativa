@@ -29,8 +29,10 @@
                     <i class="fas fa-times"></i>
                 </div>
             </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav__actions">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -210,76 +212,89 @@
             </div>
         </section>
 
-        <!-- Blog -->
+        <!-- Blog y Artículos -->
         <section class="blog section fade-in" id="blog" data-animate="features">
             <div class="container">
-                <div class="section__header">
-                    <span class="section__subtitle">Nuestro Blog</span>
-                    <h2 class="section__title">Artículos Recientes</h2>
+                <div class="section__header text-center">
+                    <span class="section__subtitle">Aprende con Nosotros</span>
+                    <h2 class="section__title">Artes Gráficas y Diseño</h2>
+                    <p class="section__description">Recursos educativos, tutoriales y análisis sobre diseño gráfico, branding y desarrollo web</p>
+                </div>
+                
+                <!-- Categorías de Artículos -->
+                <div class="blog__categories">
+                    <button class="blog__category active" data-category="all">Todos</button>
+                    <button class="blog__category" data-category="tutoriales">Tutoriales</button>
+                    <button class="blog__category" data-category="recursos">Recursos</button>
+                    <button class="blog__category" data-category="inspiracion">Inspiración</button>
+                    <button class="blog__category" data-category="tendencias">Tendencias</button>
                 </div>
                 <div class="blog__container grid">
-                    <!-- Artículo 1 -->
-                    <article class="blog__card">
+                    <!-- Artículo 1 - Tutorial -->
+                    <article class="blog__card" data-category="tutoriales">
                         <div class="blog__image">
-                            <img src="https://images.unsplash.com/photo-1499750319107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tendencias de diseño web 2023" class="blog__img">
+                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Guía de Tipografía" class="blog__img">
                             <a href="#" class="blog__button">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                         <div class="blog__content">
-                            <span class="blog__category">Diseño Web</span>
-                            <h3 class="blog__title">Tendencias de Diseño Web para 2023</h3>
-                            <p class="blog__description">Explora las últimas tendencias en diseño web que están dando forma al futuro del diseño digital este año.</p>
+                            <span class="blog__category-badge">Tutorial</span>
+                            <h3 class="blog__title">Guía Completa de Tipografía para Diseñadores</h3>
+                            <p class="blog__description">Domina los principios fundamentales de la tipografía y aprende a combinar fuentes como un profesional.</p>
                             <div class="blog__footer">
                                 <div class="blog__author">
                                     <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Autor" class="blog__author-img">
                                     <span>María López</span>
                                 </div>
-                                <span class="blog__date">15 Mayo, 2023</span>
+                                <span class="blog__date">15 Junio, 2023</span>
+                                <span class="blog__read-time">8 min</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Artículo 2 -->
-                    <article class="blog__card">
+                    <!-- Artículo 2 - Recurso -->
+                    <article class="blog__card" data-category="recursos">
                         <div class="blog__image">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Estrategias de marketing digital" class="blog__img">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Paletas de color" class="blog__img">
                             <a href="#" class="blog__button">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                         <div class="blog__content">
-                            <span class="blog__category">Marketing</span>
-                            <h3 class="blog__title">Estrategias de Marketing Digital para Emprendedores</h3>
-                            <p class="blog__description">Descubre cómo llevar tu negocio al siguiente nivel con estas estrategias de marketing digital probadas.</p>
+                            <span class="blog__category-badge">Recurso</span>
+                            <h3 class="blog__title">10 Herramientas Gratuitas para Crear Paletas de Color</h3>
+                            <p class="blog__description">Descubre las mejores herramientas en línea para crear combinaciones de colores profesionales.</p>
                             <div class="blog__footer">
                                 <div class="blog__author">
                                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Autor" class="blog__author-img">
                                     <span>Carlos Méndez</span>
                                 </div>
-                                <span class="blog__date">2 Junio, 2023</span>
+                                <span class="blog__date">5 Junio, 2023</span>
+                                <span class="blog__read-time">5 min</span>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Artículo 3 -->
-                    <article class="blog__card">
+                    <!-- Artículo 3 - Tendencias -->
+                    <article class="blog__card" data-category="tendencias">
                         <div class="blog__image">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Branding efectivo" class="blog__img">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Tendencias diseño 2023" class="blog__img">
                             <a href="#" class="blog__button">
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
                         <div class="blog__content">
-                            <span class="blog__category">Branding</span>
-                            <h3 class="blog__title">Cómo Crear un Branding Efectivo para tu Marca</h3>
-                            <p class="blog__description">Aprende los principios fundamentales para desarrollar una identidad de marca sólida y memorable.</p>
+                            <span class="blog__category-badge">Tendencias</span>
+                            <h3 class="blog__title">Tendencias en Diseño Gráfico para el Segundo Semestre 2023</h3>
+                            <p class="blog__description">Un análisis detallado de las tendencias que están marcando el diseño gráfico este año.</p>
                             <div class="blog__footer">
                                 <div class="blog__author">
                                     <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Autor" class="blog__author-img">
                                     <span>Ana Torres</span>
                                 </div>
-                                <span class="blog__date">20 Mayo, 2023</span>
+                                <span class="blog__date">1 Junio, 2023</span>
+                                <span class="blog__read-time">10 min</span>
                             </div>
                         </div>
                     </article>
@@ -638,18 +653,11 @@
         </div>
     </footer>
 
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="fas fa-arrow-up scrollup__icon"></i>
-    </a>
+
 
     <script src="main.js"></script>
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="js/animations.js"></script>
-    
-    <!-- Botón de cambio de tema -->
-    <button class="theme-switch" id="themeToggle" aria-label="Cambiar tema">
-        <i class="fas fa-moon"></i>
-    </button>
 </body>
 </html>
