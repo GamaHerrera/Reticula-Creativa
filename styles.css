@@ -2785,6 +2785,266 @@ button {
   }
 }
 
+/* ===== ARTÍCULOS RECIENTES ===== */
+.recent-articles {
+  padding: 6rem 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.recent-articles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgzMCkiPjxyZWN0IHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmZiI+PC9yZWN0PjxwYXRoIGQ9Ik0xNSAxNUgxNVYxNUgxNVpNNDUgMTVINDVWMjVINDVWMTVaTTE1IDQ1SDFWNDVIMTVWNDVaTTQ1IDc1SDFWNzVINDFWNzVaTTQ1IDBIMVYxMEg0NVYwWk0xNSAzMEgxNVYzMEgxNVoiIGZpbGw9IiNmOGY5ZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+  opacity: 1;
+  z-index: 0;
+}
+
+.articles-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.masonry-item {
+  display: flex;
+  flex-direction: column;
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+.article-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.article-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.article-badge[data-category="Nuevo"] {
+  background: #4CAF50;
+}
+
+.article-badge[data-category="Guía"] {
+  background: #2196F3;
+}
+
+.article-badge[data-category="Tutorial"] {
+  background: #9C27B0;
+}
+
+.article-badge[data-category="Análisis"] {
+  background: #FF9800;
+}
+
+.article-badge[data-category="Recursos"] {
+  background: #607D8B;
+}
+
+.article-badge[data-category="Inspiración"] {
+  background: #E91E63;
+}
+
+.article-image-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%;
+  background: #f5f5f5;
+}
+
+.article-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.article-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.article-card:hover .article-overlay {
+  opacity: 0.5;
+}
+
+.article-card:hover .article-image img {
+  transform: scale(1.05);
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.article-content {
+  padding: 1.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.article-category {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-right: 0.5rem;
+  position: relative;
+  padding-right: 0.75rem;
+}
+
+.article-category::after {
+  content: '•';
+  position: absolute;
+  right: 0;
+  color: #ddd;
+}
+
+.article-date {
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+.article-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.article-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-title a:hover {
+  color: var(--primary-color);
+}
+
+.article-excerpt {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+  margin-top: auto;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.author-avatar:hover {
+  transform: scale(1.1);
+}
+
+.author-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+}
+
+.read-more:hover {
+  background: rgba(255, 107, 107, 0.1);
+  padding-right: 0.25rem;
+}
+
+.read-more i {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover i {
+  transform: translateX(3px);
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .article-card:not(.featured-main) {
