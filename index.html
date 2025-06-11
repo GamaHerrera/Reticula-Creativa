@@ -156,7 +156,7 @@
         </section>
 
         <!-- Portafolio -->
-        <section class="portfolio section fade-in" id="portafolio" data-animate="portfolio">
+        <section class="portfolio section fade-in hidden" id="portafolio" data-animate="portfolio">
             <div class="container">
                 <div class="section__header">
                     <span class="section__subtitle">Nuestro Trabajo</span>
@@ -347,7 +347,7 @@
         </section>
 
         <!-- Descargas -->
-        <section class="downloads section fade-in" id="descargas">
+        <section class="downloads section fade-in hidden" id="descargas">
             <div class="container">
                 <div class="section__header text-center">
                     <span class="section__subtitle">Recursos Gratuitos</span>
@@ -703,5 +703,173 @@
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="js/animations.js"></script>
+    
+    <style>
+        /* Estilos mejorados para la sección de descargas */
+        .downloads__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .downloads__card {
+            background: var(--container-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .downloads__card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        
+        .downloads__card-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .downloads__card-header i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            background: rgba(var(--primary-rgb), 0.1);
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .downloads__badge {
+            background: var(--primary-color);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        .downloads__badge--new {
+            background: #4CAF50;
+        }
+        
+        .downloads__title {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            color: var(--title-color);
+        }
+        
+        .downloads__description {
+            font-size: 0.9rem;
+            color: var(--text-color-light);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .downloads__features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+            flex-grow: 1;
+        }
+        
+        .downloads__features li {
+            font-size: 0.85rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .downloads__features i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+            font-size: 0.7rem;
+        }
+        
+        .downloads__meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.8rem;
+            color: var(--text-color-light);
+        }
+        
+        .btn--small {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+        
+        .downloads__cta {
+            background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05) 0%, rgba(var(--primary-rgb), 0.02) 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .downloads__cta h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--title-color);
+        }
+        
+        .downloads__cta p {
+            color: var(--text-color-light);
+            max-width: 600px;
+            margin: 0 auto 1rem;
+        }
+        
+        .downloads__cta-form {
+            display: flex;
+            max-width: 500px;
+            width: 100%;
+            gap: 0.5rem;
+        }
+        
+        .downloads__cta-form input {
+            flex: 1;
+            padding: 0.8rem 1.2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+        
+        .downloads__cta-form input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .downloads__cta {
+                padding: 1.5rem;
+                text-align: left;
+                align-items: flex-start;
+            }
+            
+            .downloads__cta-form {
+                flex-direction: column;
+            }
+            
+            .downloads__cta-form .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </body>
 </html>
