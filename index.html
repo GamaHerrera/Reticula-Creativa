@@ -157,97 +157,6 @@
 
 
 
-        <!-- Blog y Artículos -->
-        <section class="blog section fade-in" id="blog" data-animate="features">
-            <div class="container">
-                <div class="section__header text-center">
-                    <span class="section__subtitle">Aprende con Nosotros</span>
-                    <h2 class="section__title">Artes Gráficas y Diseño</h2>
-                    <p class="section__description">Recursos educativos, tutoriales y análisis sobre diseño gráfico, branding y desarrollo web</p>
-                </div>
-                
-                <!-- Categorías de Artículos -->
-                <div class="blog__categories">
-                    <button class="blog__category active" data-category="all">Todos</button>
-                    <button class="blog__category" data-category="tutoriales">Tutoriales</button>
-                    <button class="blog__category" data-category="recursos">Recursos</button>
-                    <button class="blog__category" data-category="inspiracion">Inspiración</button>
-                    <button class="blog__category" data-category="tendencias">Tendencias</button>
-                </div>
-                <div class="blog__container grid">
-                    <!-- Artículo 1 - Tutorial -->
-                    <article class="blog__card" data-category="tutoriales">
-                        <div class="blog__image">
-                            <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80" alt="Guía de Tipografía" class="blog__img">
-                            <a href="#" class="blog__button">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="blog__content">
-                            <span class="blog__category-badge">Tutorial</span>
-                            <h3 class="blog__title">Guía Completa de Tipografía para Diseñadores</h3>
-                            <p class="blog__description">Domina los principios fundamentales de la tipografía y aprende a combinar fuentes como un profesional.</p>
-                            <div class="blog__footer">
-                                <div class="blog__author">
-                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Autor" class="blog__author-img">
-                                    <span>María López</span>
-                                </div>
-                                <span class="blog__date">15 Junio, 2023</span>
-                                <span class="blog__read-time">8 min</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Artículo 2 - Recurso -->
-                    <article class="blog__card" data-category="recursos">
-                        <div class="blog__image">
-                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Paletas de color" class="blog__img">
-                            <a href="#" class="blog__button">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="blog__content">
-                            <span class="blog__category-badge">Recurso</span>
-                            <h3 class="blog__title">10 Herramientas Gratuitas para Crear Paletas de Color</h3>
-                            <p class="blog__description">Descubre las mejores herramientas en línea para crear combinaciones de colores profesionales.</p>
-                            <div class="blog__footer">
-                                <div class="blog__author">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Autor" class="blog__author-img">
-                                    <span>Carlos Méndez</span>
-                                </div>
-                                <span class="blog__date">5 Junio, 2023</span>
-                                <span class="blog__read-time">5 min</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Artículo 3 - Tendencias -->
-                    <article class="blog__card" data-category="tendencias">
-                        <div class="blog__image">
-                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Tendencias diseño 2023" class="blog__img">
-                            <a href="#" class="blog__button">
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="blog__content">
-                            <span class="blog__category-badge">Tendencias</span>
-                            <h3 class="blog__title">Tendencias en Diseño Gráfico para el Segundo Semestre 2023</h3>
-                            <p class="blog__description">Un análisis detallado de las tendencias que están marcando el diseño gráfico este año.</p>
-                            <div class="blog__footer">
-                                <div class="blog__author">
-                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Autor" class="blog__author-img">
-                                    <span>Ana Torres</span>
-                                </div>
-                                <span class="blog__date">1 Junio, 2023</span>
-                                <span class="blog__read-time">10 min</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
 
         <!-- Contacto -->
         <section class="contact section fade-in" id="contacto" data-animate="contact">
@@ -488,71 +397,80 @@
                 <div class="footer__grid">
                     <!-- Columna 1: Logo y descripción -->
                     <div class="footer__col">
-                        <a href="#" class="footer__logo">Retícula<span>Creativa</span></a>
-                        <p class="footer__description">Diseñamos experiencias visuales únicas que inspiran y conectan con tu audiencia a través de soluciones creativas y estratégicas.</p>
+                        <div class="footer__logo">
+                            <h3>Retícula<span>Creativa</span></h3>
+                        </div>
+                        <p class="footer__description">Blog especializado en diseño gráfico, desarrollo web y creatividad digital. Compartimos conocimientos, tutoriales y recursos para la comunidad de diseño.</p>
                         <div class="footer__social">
                             <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                             <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="footer__social-link" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                            <a href="#" class="footer__social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
                         </div>
                     </div>
 
-                    <!-- Columna 2: Enlaces rápidos -->
+                    <!-- Columna 2: Últimos artículos -->
                     <div class="footer__col">
-                        <h3 class="footer__title">Enlaces Rápidos</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#inicio" class="footer__link">Inicio</a></li>
-                            <li class="footer__item"><a href="#sobre-nosotros" class="footer__link">Sobre Nosotros</a></li>
-                            <li class="footer__item"><a href="#blog" class="footer__link">Blog</a></li>
-                            <li class="footer__item"><a href="#contacto" class="footer__link">Contacto</a></li>
+                        <h4 class="footer__title">Últimos Artículos</h4>
+                        <ul class="footer__recent-posts">
+                            <li class="footer__recent-post">
+                                <a href="#" class="footer__post-link">Guía de Tipografía para Diseñadores</a>
+                                <span class="footer__post-date">15 Junio, 2023</span>
+                            </li>
+                            <li class="footer__recent-post">
+                                <a href="#" class="footer__post-link">Tendencias de Diseño Web 2023</a>
+                                <span class="footer__post-date">10 Junio, 2023</span>
+                            </li>
+                            <li class="footer__recent-post">
+                                <a href="#" class="footer__post-link">Herramientas Esenciales para Diseñadores</a>
+                                <span class="footer__post-date">5 Junio, 2023</span>
+                            </li>
                         </ul>
                     </div>
 
-                    <!-- Columna 3: Servicios -->
+                    <!-- Columna 3: Categorías -->
                     <div class="footer__col">
-                        <h3 class="footer__title">Nuestros Servicios</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Diseño Web</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Branding Corporativo</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Diseño Gráfico</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Marketing Digital</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Redes Sociales</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Diseño de Apps</a></li>
+                        <h4 class="footer__title">Categorías</h4>
+                        <ul class="footer__categories">
+                            <li><a href="#" class="footer__category-link">Diseño Gráfico <span class="footer__category-count">12</span></a></li>
+                            <li><a href="#" class="footer__category-link">Desarrollo Web <span class="footer__category-count">8</span></a></li>
+                            <li><a href="#" class="footer__category-link">Branding <span class="footer__category-count">5</span></a></li>
+                            <li><a href="#" class="footer__category-link">Tutoriales <span class="footer__category-count">15</span></a></li>
+                            <li><a href="#" class="footer__category-link">Recursos Gratuitos <span class="footer__category-count">7</span></a></li>
                         </ul>
                     </div>
 
-                    <!-- Columna 4: Newsletter -->
+                    <!-- Columna 4: Suscripción al blog -->
                     <div class="footer__col">
-                        <h3 class="footer__title">Newsletter</h3>
-                        <p class="footer__text">Suscríbete para recibir noticias, ofertas especiales y actualizaciones directamente en tu bandeja de entrada.</p>
-                        
-                        <form action="#" class="footer__form">
+                        <h4 class="footer__title">Suscríbete al Blog</h4>
+                        <p class="footer__text">Recibe las últimas publicaciones y recursos gratuitos directamente en tu correo.</p>
+                        <form class="footer__subscribe-form">
                             <div class="footer__form-group">
                                 <input type="email" placeholder="Tu correo electrónico" class="footer__input" required>
-                                <button type="submit" class="footer__submit" aria-label="Suscribirse">
+                                <button type="submit" class="footer__button" aria-label="Suscribirse">
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
                             <div class="footer__privacy">
-                                <input type="checkbox" id="privacy" class="footer__checkbox" required>
-                                <label for="privacy" class="footer__privacy-text">Acepto la <a href="#" class="footer__privacy-link">Política de Privacidad</a></label>
+                                <input type="checkbox" id="privacy" required>
+                                <label for="privacy">Acepto la <a href="#">política de privacidad</a></label>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Footer Bottom -->
         <div class="footer__bottom">
             <div class="container">
                 <div class="footer__bottom-content">
-                    <p class="footer__copyright">&copy; <span id="current-year">2023</span> Retícula Creativa. Todos los derechos reservados.</p>
+                    <p class="footer__copyright">
+                        &copy; <span id="current-year">2023</span> Retícula Creativa. 
+                        <span class="footer__rights">Todos los derechos reservados.</span>
+                    </p>
                     <div class="footer__legal">
-                        <a href="#" class="footer__legal-link">Términos y Condiciones</a>
-                        <span class="footer__divider">|</span>
                         <a href="#" class="footer__legal-link">Política de Privacidad</a>
+                        <span class="footer__divider">|</span>
+                        <a href="#" class="footer__legal-link">Términos de Uso</a>
                         <span class="footer__divider">|</span>
                         <a href="#" class="footer__legal-link">Política de Cookies</a>
                     </div>
@@ -764,173 +682,5 @@
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="js/animations.js"></script>
-    
-    <style>
-        /* Estilos mejorados para la sección de descargas */
-        .downloads__container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .downloads__card {
-            background: var(--container-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .downloads__card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-        }
-        
-        .downloads__card-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-        }
-        
-        .downloads__card-header i {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            background: rgba(var(--primary-rgb), 0.1);
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .downloads__badge {
-            background: var(--primary-color);
-            color: white;
-            font-size: 0.7rem;
-            padding: 0.25rem 0.5rem;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-        
-        .downloads__badge--new {
-            background: #4CAF50;
-        }
-        
-        .downloads__title {
-            font-size: 1.1rem;
-            margin: 0.5rem 0;
-            color: var(--title-color);
-        }
-        
-        .downloads__description {
-            font-size: 0.9rem;
-            color: var(--text-color-light);
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        
-        .downloads__features {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 1.5rem 0;
-            flex-grow: 1;
-        }
-        
-        .downloads__features li {
-            font-size: 0.85rem;
-            color: var(--text-color);
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-        }
-        
-        .downloads__features i {
-            color: var(--primary-color);
-            margin-right: 0.5rem;
-            font-size: 0.7rem;
-        }
-        
-        .downloads__meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.8rem;
-            color: var(--text-color-light);
-        }
-        
-        .btn--small {
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-        }
-        
-        .downloads__cta {
-            background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05) 0%, rgba(var(--primary-rgb), 0.02) 100%);
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        
-        .downloads__cta h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-            color: var(--title-color);
-        }
-        
-        .downloads__cta p {
-            color: var(--text-color-light);
-            max-width: 600px;
-            margin: 0 auto 1rem;
-        }
-        
-        .downloads__cta-form {
-            display: flex;
-            max-width: 500px;
-            width: 100%;
-            gap: 0.5rem;
-        }
-        
-        .downloads__cta-form input {
-            flex: 1;
-            padding: 0.8rem 1.2rem;
-            border: 1px solid var(--border-color);
-            border-radius: 50px;
-            font-size: 0.95rem;
-            transition: border-color 0.3s;
-        }
-        
-        .downloads__cta-form input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-        
-        @media (max-width: 768px) {
-            .downloads__cta {
-                padding: 1.5rem;
-                text-align: left;
-                align-items: flex-start;
-            }
-            
-            .downloads__cta-form {
-                flex-direction: column;
-            }
-            
-            .downloads__cta-form .btn {
-                width: 100%;
-            }
-        }
-    </style>
 </body>
 </html>
