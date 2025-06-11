@@ -21,7 +21,15 @@
                     <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
                     <li class="nav__item"><a href="#sobre-nosotros" class="nav__link">Sobre Nosotros</a></li>
                     <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="#contacto" class="nav__link btn btn--primary">Contacto</a></li>
+                    <li class="nav__item nav__search">
+                        <form class="search-form">
+                            <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar">
+                            <button type="submit" class="search-button" aria-label="Buscar">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link btn btn--primary">Participa en el Blog</a></li>
                 </ul>
                 <div class="nav__close" id="nav-close">
                     <i class="fas fa-times"></i>
@@ -142,7 +150,7 @@
                     </div>
                     
                     <div class="about__cta">
-                        <a href="#contacto" class="btn btn--primary">Únete a la Comunidad</a>
+                        <a href="#participa" class="nav__link nav__link--button">Participa en el Blog</a>
                         <a href="#descargas" class="btn btn--outline">Explora Recursos</a>
                     </div>
                 </div>

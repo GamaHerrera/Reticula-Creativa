@@ -251,6 +251,75 @@ button {
   transform: scaleX(1);
 }
 
+/* Search Form Styles */
+.nav__search {
+  display: flex;
+  align-items: center;
+  margin: 0 0.75rem;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 180px;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 2px solid var(--gray-medium);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+  width: 220px;
+}
+
+.search-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--gray-dark);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.search-button:hover {
+  color: var(--primary-color);
+}
+
+/* Adjust search form for mobile */
+@media (max-width: 1200px) {
+  .nav__search {
+    order: 1;
+    width: 100%;
+    margin: 1.5rem 0 0;
+    padding: 0 0.5rem;
+  }
+  
+  .search-form {
+    width: 100%;
+  }
+  
+  .search-input {
+    width: 100% !important;
+  }
+}
+
 /* Estilo especial para el botón de contacto en el menú */
 .nav__item:last-child .nav__link {
   background-color: var(--primary-color);
@@ -3232,6 +3301,10 @@ button {
     padding: 5rem 2rem;
     transition: 0.3s;
     z-index: var(--z-fixed);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
   }
 
   .nav__menu.show-menu {
