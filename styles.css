@@ -320,6 +320,399 @@ button {
   }
 }
 
+/* Estilos para el carrusel de artículos */
+.articles-carousel {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.articles-carousel .section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.articles-carousel .section-title {
+  font-size: 2.25rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.articles-carousel .section-subtitle {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+}
+
+.articles-carousel .section-line {
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto 2rem;
+}
+
+/* Estilos de las tarjetas del carrusel */
+.carousel-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.carousel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.carousel-card__image {
+  position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+}
+
+.carousel-card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card:hover .carousel-card__image img {
+  transform: scale(1.05);
+}
+
+.carousel-card__badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.carousel-card__content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-card__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--gray-dark);
+}
+
+.carousel-card__category {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.carousel-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  flex: 1;
+}
+
+.carousel-card__excerpt {
+  color: var(--gray-dark);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.carousel-card__link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  margin-top: auto;
+}
+
+.carousel-card__link i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card__link:hover {
+  color: var(--primary-dark);
+}
+
+.carousel-card__link:hover i {
+  transform: translateX(5px);
+}
+
+/* Estilos de navegación del carrusel - Controles laterales */
+.glide {
+  position: relative;
+  padding: 0 3rem; /* Espacio para los controles */
+}
+
+.glide__track {
+  overflow: visible;
+}
+
+.glide__controls {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+/* Controles de navegación */
+.glide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--primary-color);
+  background: var(--white);
+  border-radius: 50%;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) scale(0.9);
+}
+
+.glide:hover .glide__arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) scale(1);
+}
+
+.glide__arrow--left {
+  left: -1rem;
+}
+
+.glide__arrow--right {
+  right: -1rem;
+}
+
+.glide__arrow i {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.glide__arrow:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.3);
+}
+
+.glide__arrow:active {
+  transform: translateY(-50%) scale(0.98);
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.glide__arrow:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.3);
+}
+
+/* Indicadores de página */
+.glide__bullets {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.glide__bullet {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--gray-medium);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glide__bullet--active,
+.glide__bullet:hover {
+  background: var(--primary-color);
+  opacity: 1;
+  width: 24px;
+}
+
+/* Indicadores de página */
+.glide__bullets {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.glide__bullet {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--gray-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.glide__bullet--active,
+.glide__bullet:hover {
+  background: var(--primary-color);
+  opacity: 1;
+  width: 24px;
+}
+
+/* Efecto hover en el contenedor del carrusel */
+.glide:hover .glide__arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) scale(1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+  .glide {
+    padding: 0 2.5rem;
+  }
+  
+  .glide__arrow {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) scale(1);
+  }
+  
+  .glide__arrow--left {
+    left: 0.5rem;
+  }
+  
+  .glide__arrow--right {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .glide {
+    padding: 0 2rem;
+  }
+  
+  .glide__arrow {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .glide__bullet {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .glide__bullet--active,
+  .glide__bullet:hover {
+    width: 20px;
+  }
+}
+
+.glide__bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.glide__bullet {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--gray-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glide__bullet--active,
+.glide__bullet:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .articles-carousel {
+    padding: 3rem 0;
+  }
+  
+  .articles-carousel .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .carousel-card__title {
+    font-size: 1.1rem;
+  }
+  
+  .glide__arrows {
+    top: -60px;
+  }
+  
+  .glide__arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-carousel {
+    padding: 2.5rem 0;
+  }
+  
+  .articles-carousel .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-card__content {
+    padding: 1.25rem;
+  }
+  
+  .carousel-card__title {
+    font-size: 1.25rem;
+  }
+}
+
 /* Estilo especial para el botón de contacto en el menú */
 .nav__item:last-child .nav__link {
   background-color: var(--primary-color);

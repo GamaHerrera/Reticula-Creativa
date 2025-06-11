@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.theme.min.css">
 </head>
 <body>
     <header class="header">
@@ -399,6 +402,97 @@
         </section>
     </main>
 
+
+    <!-- Carrusel de Artículos -->
+    <section class="articles-carousel">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Lo más destacado</span>
+                <h2 class="section-title">Explora Nuestros Artículos</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        <!-- Slide 1 -->
+                        <div class="glide__slide">
+                            <article class="carousel-card">
+                                <div class="carousel-card__image">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Diseño Web">
+                                    <span class="carousel-card__badge">Nuevo</span>
+                                </div>
+                                <div class="carousel-card__content">
+                                    <div class="carousel-card__meta">
+                                        <span class="carousel-card__category">Diseño Web</span>
+                                        <span class="carousel-card__date">15 Jun 2023</span>
+                                    </div>
+                                    <h3 class="carousel-card__title">Guía completa de accesibilidad web para desarrolladores</h3>
+                                    <p class="carousel-card__excerpt">Aprende a crear sitios web accesibles que cumplan con los estándares WCAG 2.1.</p>
+                                    <a href="#" class="carousel-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="glide__slide">
+                            <article class="carousel-card">
+                                <div class="carousel-card__image">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Diseño UX/UI">
+                                    <span class="carousel-card__badge">Popular</span>
+                                </div>
+                                <div class="carousel-card__content">
+                                    <div class="carousel-card__meta">
+                                        <span class="carousel-card__category">UX/UI</span>
+                                        <span class="carousel-card__date">10 Jun 2023</span>
+                                    </div>
+                                    <h3 class="carousel-card__title">10 principios de diseño UX que todo diseñador debe conocer</h3>
+                                    <p class="carousel-card__excerpt">Los principios fundamentales para crear experiencias de usuario excepcionales.</p>
+                                    <a href="#" class="carousel-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="glide__slide">
+                            <article class="carousel-card">
+                                <div class="carousel-card__image">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Programación">
+                                    <span class="carousel-card__badge">Tutorial</span>
+                                </div>
+                                <div class="carousel-card__content">
+                                    <div class="carousel-card__meta">
+                                        <span class="carousel-card__category">React</span>
+                                        <span class="carousel-card__date">5 Jun 2023</span>
+                                    </div>
+                                    <h3 class="carousel-card__title">Desarrollo web con React: Mejores prácticas 2023</h3>
+                                    <p class="carousel-card__excerpt">Aprende las mejores prácticas actualizadas para desarrollar aplicaciones modernas con React.</p>
+                                    <a href="#" class="carousel-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles de navegación -->
+                <div class="glide__controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Artículos del Mes -->
     <section class="featured-articles">
@@ -973,7 +1067,10 @@
             }
         });
     </script>
-    <script src="js/main.js"></script>
+    <!-- Glide.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="script.js"></script>
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="js/animations.js"></script>
