@@ -1,17 +1,17 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /* Menu show */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
 /* Menu hidden */
-if(navClose){
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
@@ -28,52 +28,32 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () =>{
+const scrollHeader = () => {
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    this.scrollY >= 50 ? header.classList.add('scroll-header') 
-                       : header.classList.remove('scroll-header')
+    this.scrollY >= 50 ? header.classList.add('scroll-header')
+        : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
-/*=============== PORTFOLIO FILTER ===============*/
-let mixerPortfolio = mixitup('.portfolio__container', {
-    selectors: {
-        target: '.portfolio__card'
-    },
-    animation: {
-        duration: 300
-    }
-});
-
-// Link active portfolio
-const linkPortfolio = document.querySelectorAll('.portfolio__item')
-
-function activePortfolio(){
-    linkPortfolio.forEach(l=> l.classList.remove('active-portfolio'))
-    this.classList.add('active-portfolio')
-}
-
-linkPortfolio.forEach(l=> l.addEventListener('click', activePortfolio))
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-const scrollActive = () =>{
-   const scrollY = window.pageYOffset
+const scrollActive = () => {
+    const scrollY = window.pageYOffset
 
-   sections.forEach(current =>{
-       const sectionHeight = current.offsetHeight,
-             sectionTop = current.offsetTop - 58,
-             sectionId = current.getAttribute('id'),
-             sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
-       if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-           sectionsClass.classList.add('active-link')
-       }else{
-           sectionsClass.classList.remove('active-link')
-       }                    
-   })
+        if (sectionsClass && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add('active-link')
+        } else if (sectionsClass) {
+            sectionsClass.classList.remove('active-link')
+        }
+    })
 }
 window.addEventListener('scroll', scrollActive)
 
@@ -86,17 +66,20 @@ const sr = ScrollReveal({
     // reset: true // Animations repeat
 })
 
-sr.reveal(`.hero__content, .section__subtitle, .section__title`)
-sr.reveal(`.hero__image`, {origin: 'bottom'})
-sr.reveal(`.about__image, .contact__info`, {origin: 'left'})
-sr.reveal(`.about__data, .contact__form`, {origin: 'right'})
-sr.reveal(`.portfolio__card, .blog__card, .downloads__card`, {interval: 100})
+// Animar solo elementos que existen en el HTML actual
+sr.reveal(`.hero__title, .hero__description`)
+sr.reveal(`.section__subtitle, .section__title, .section__description`)
+sr.reveal(`.about__pillar`, { interval: 100 })
+sr.reveal(`.carousel-card`, { interval: 100 })
+sr.reveal(`.article-card`, { interval: 100 })
+sr.reveal(`.contact__card`, { interval: 100, origin: 'left' })
+sr.reveal(`.contact__form`, { origin: 'right' })
 
 /*=============== SCROLL UP ===============*/
-function scrollUp(){
+function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if (this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -115,9 +98,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button

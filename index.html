@@ -1,19 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retícula Creativa - Estudio de Diseño</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Retícula Creativa - Comunidad de Diseño Visual en Latinoamérica</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Retícula Creativa es una comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI. Únete a diseñadores de Latinoamérica para compartir, aprender y conectar.">
+    <meta name="keywords"
+        content="diseño gráfico, diseño web, tipografía, diseño editorial, UI design, UX design, comunidad diseño, Latinoamérica, blog diseño, recursos diseño">
+    <meta name="author" content="Retícula Creativa">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reticulacreativa.com/">
+    <meta property="og:title" content="Retícula Creativa - Comunidad de Diseño Visual">
+    <meta property="og:description"
+        content="Comunidad abierta enfocada en el diseño visual en todas sus formas. Únete a diseñadores de Latinoamérica para compartir, aprender y conectar.">
+    <meta property="og:image" content="https://reticulacreativa.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Retícula Creativa">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://reticulacreativa.com/">
+    <meta name="twitter:title" content="Retícula Creativa - Comunidad de Diseño Visual">
+    <meta name="twitter:description"
+        content="Comunidad abierta enfocada en el diseño visual en todas sus formas. Únete a diseñadores de Latinoamérica.">
+    <meta name="twitter:image" content="https://reticulacreativa.com/assets/twitter-image.jpg">
+    <meta name="twitter:creator" content="@reticulacreativa">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://reticulacreativa.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <!-- Fonts with display=swap for performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Glide.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/css/glide.theme.min.css">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Retícula Creativa",
+      "url": "https://reticulacreativa.com",
+      "logo": "https://reticulacreativa.com/assets/logo.png",
+      "description": "Comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI",
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://facebook.com/reticulacreativa",
+        "https://twitter.com/reticulacreativa",
+        "https://instagram.com/reticulacreativa",
+        "https://linkedin.com/company/reticula-creativa"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hola@reticulacreativa.com",
+        "contactType": "Customer Service",
+        "availableLanguage": ["Spanish"]
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Latinoamérica"
+      }
+    }
+    </script>
 </head>
+
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <header class="header">
         <nav class="nav container">
             <div class="nav__logo">
@@ -32,7 +113,8 @@
                             </button>
                         </form>
                     </li>
-                    <li class="nav__item"><a href="#contacto" class="nav__link btn btn--primary">Participa en el Blog</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link btn btn--primary">Participa en el
+                            Blog</a></li>
                 </ul>
                 <div class="nav__close" id="nav-close">
                     <i class="fas fa-times"></i>
@@ -46,15 +128,16 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero section fade-in" id="inicio">
             <div class="hero__container container">
                 <div class="hero__header">
                     <h1 class="hero__title">Explora el Mundo del <span>Diseño Gráfico</span></h1>
-                    <p class="hero__description">Descubre artículos, tutoriales y recursos para potenciar tu creatividad</p>
+                    <p class="hero__description">Descubre artículos, tutoriales y recursos para potenciar tu creatividad
+                    </p>
                 </div>
-                
+
                 <!-- Grid de artículos destacados -->
                 <div class="featured-article-container">
                     <!-- Artículo del día -->
@@ -62,24 +145,29 @@
                         <div class="article-content">
                             <span class="article-badge">Artículo del día</span>
                             <h2>Las 10 Tendencias de Diseño que Dominarán 2024</h2>
-                            <p class="article-excerpt">Explora las tendencias visuales más impactantes que están transformando la industria del diseño gráfico y digital este año. Desde tipografías audaces hasta paletas de colores innovadoras, descubre lo que marcará la pauta en el mundo del diseño.</p>
+                            <p class="article-excerpt">Explora las tendencias visuales más impactantes que están
+                                transformando la industria del diseño gráfico y digital este año. Desde tipografías
+                                audaces hasta paletas de colores innovadoras, descubre lo que marcará la pauta en el
+                                mundo del diseño.</p>
                             <div class="article-meta">
                                 <span class="article-category">Tendencia</span>
                                 <span class="article-date">11 de Junio, 2024</span>
                             </div>
-                            <a href="#" class="btn btn-primary">Leer artículo completo <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn btn-primary">Leer artículo completo <i
+                                    class="fas fa-arrow-right"></i></a>
                         </div>
                         <div class="article-image">
-                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80" alt="Tendencias de diseño 2024">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80"
+                                alt="Tendencias de diseño 2024">
                         </div>
                     </article>
                 </div>
-                
+
                 <div class="hero__cta">
                     <a href="#blog" class="btn btn--primary">Ver todos los artículos</a>
                 </div>
             </div>
-            
+
             <a href="#blog" class="hero__scroll" aria-label="Ver más artículos">
                 <span>Ver más</span>
                 <i class="fas fa-chevron-down"></i>
@@ -97,35 +185,41 @@
             <div class="about__container grid">
                 <div class="about__content">
                     <div class="about__text">
-                        <p class="about__description">Retícula Creativa es una comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI. Nuestra misión es reunir voces diversas de Latinoamérica para expresarse, aprender y conectar mediante el diseño.</p>
-                        
+                        <p class="about__description">Retícula Creativa es una comunidad abierta enfocada en el diseño
+                            visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI. Nuestra misión es
+                            reunir voces diversas de Latinoamérica para expresarse, aprender y conectar mediante el
+                            diseño.</p>
+
                         <div class="about__pillars">
                             <div class="about__pillar">
                                 <div class="about__pillar-icon">
                                     <i class="fas fa-paint-brush"></i>
                                 </div>
                                 <h3 class="about__pillar-title">Diversidad Creativa</h3>
-                                <p class="about__pillar-text">Celebramos todas las formas de expresión visual y las diferentes perspectivas del diseño.</p>
+                                <p class="about__pillar-text">Celebramos todas las formas de expresión visual y las
+                                    diferentes perspectivas del diseño.</p>
                             </div>
-                            
+
                             <div class="about__pillar">
                                 <div class="about__pillar-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <h3 class="about__pillar-title">Comunidad Activa</h3>
-                                <p class="about__pillar-text">Un espacio para compartir conocimiento, experiencias y crecer juntos como profesionales.</p>
+                                <p class="about__pillar-text">Un espacio para compartir conocimiento, experiencias y
+                                    crecer juntos como profesionales.</p>
                             </div>
-                            
+
                             <div class="about__pillar">
                                 <div class="about__pillar-icon">
                                     <i class="fas fa-book"></i>
                                 </div>
                                 <h3 class="about__pillar-title">Recursos Compartidos</h3>
-                                <p class="about__pillar-text">Acceso a herramientas, tutoriales y materiales para el desarrollo profesional continuo.</p>
+                                <p class="about__pillar-text">Acceso a herramientas, tutoriales y materiales para el
+                                    desarrollo profesional continuo.</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="about__cta">
                         <a href="#participa" class="nav__link nav__link--button">Participa en el Blog</a>
                         <a href="#descargas" class="btn btn--outline">Explora Recursos</a>
@@ -134,7 +228,8 @@
                 <div class="about__image">
                     <div class="about__shape"></div>
                     <div class="about__img">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Comunidad de diseño Retícula Creativa">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                            alt="Comunidad de diseño Retícula Creativa">
                     </div>
                 </div>
             </div>
@@ -149,9 +244,10 @@
                 <div class="section__header text-center">
                     <span class="section__subtitle">Colabora con Nosotros</span>
                     <h2 class="section__title">Envía tu Artículo al Blog</h2>
-                    <p class="section__description">¿Tienes una historia, experiencia o conocimiento que compartir? Envíanos tu artículo para ser publicado en nuestro blog.</p>
+                    <p class="section__description">¿Tienes una historia, experiencia o conocimiento que compartir?
+                        Envíanos tu artículo para ser publicado en nuestro blog.</p>
                 </div>
-                
+
                 <div class="contact__container grid">
                     <!-- Información para envío de artículos -->
                     <div class="contact__info">
@@ -161,14 +257,15 @@
                             </div>
                             <div class="contact__card-content">
                                 <h3 class="contact__card-title">¿Cómo enviar tu artículo?</h3>
-                                <p class="contact__card-text">Completa el formulario con los detalles de tu artículo. Asegúrate de revisar los requisitos antes de enviar.</p>
-                                
+                                <p class="contact__card-text">Completa el formulario con los detalles de tu artículo.
+                                    Asegúrate de revisar los requisitos antes de enviar.</p>
+
                                 <div class="requirements">
                                     <button type="button" class="requirements__toggle" aria-expanded="false">
                                         <span>Ver requisitos del artículo</span>
                                         <i class="fas fa-chevron-down"></i>
                                     </button>
-                                    
+
                                     <div class="requirements__content">
                                         <h4>Requisitos generales:</h4>
                                         <ul class="requirements__list">
@@ -189,7 +286,7 @@
                                                 <span>Estructura clara con encabezados (H2, H3)</span>
                                             </li>
                                         </ul>
-                                        
+
                                         <h4>Formato del archivo:</h4>
                                         <ul class="requirements__list">
                                             <li class="requirements__item">
@@ -205,7 +302,7 @@
                                                 <span>Tamaño máximo: 5MB</span>
                                             </li>
                                         </ul>
-                                        
+
                                         <h4>Imágenes (opcional):</h4>
                                         <ul class="requirements__list">
                                             <li class="requirements__item">
@@ -225,37 +322,44 @@
                                                 <span>Debes tener derechos de uso</span>
                                             </li>
                                         </ul>
-                                        
+
                                         <div class="requirements__note">
                                             <i class="fas fa-info-circle"></i>
-                                            <p>Nos reservamos el derecho de editar el contenido para ajustarlo a nuestro estilo editorial. Te notificaremos en un plazo máximo de 7 días hábiles sobre la publicación de tu artículo.</p>
+                                            <p>Nos reservamos el derecho de editar el contenido para ajustarlo a nuestro
+                                                estilo editorial. Te notificaremos en un plazo máximo de 7 días hábiles
+                                                sobre la publicación de tu artículo.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="contact__card">
                             <div class="contact__card-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact__card-content">
                                 <h3 class="contact__card-title">¿Tienes dudas?</h3>
-                                <p class="contact__card-text">Si prefieres, también puedes contactarnos directamente:</p>
-                                <a href="mailto:blog@reticulacreativa.com" class="contact__card-link">blog@reticulacreativa.com</a>
+                                <p class="contact__card-text">Si prefieres, también puedes contactarnos directamente:
+                                </p>
+                                <a href="mailto:blog@reticulacreativa.com"
+                                    class="contact__card-link">blog@reticulacreativa.com</a>
                                 <p class="contact__card-text">Asunto: Consulta - [Tema de tu consulta]</p>
-                                
+
                                 <div class="contact__social">
                                     <span>O encuéntranos en:</span>
                                     <div class="contact__social-links">
-                                        <a href="#" class="contact__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                        <a href="#" class="contact__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                        <a href="#" class="contact__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="contact__social-link" aria-label="Twitter"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a href="#" class="contact__social-link" aria-label="Instagram"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a href="#" class="contact__social-link" aria-label="Facebook"><i
+                                                class="fab fa-facebook-f"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="contact__card">
                             <div class="contact__card-icon">
                                 <i class="fas fa-file-alt"></i>
@@ -270,18 +374,21 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="contact__social">
                             <h3 class="contact__social-title">¿Preguntas?</h3>
                             <p class="contact__social-text">Escríbenos a nuestras redes sociales:</p>
                             <div class="contact__social-links">
-                                <a href="#" class="contact__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="contact__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="contact__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="contact__social-link" aria-label="Facebook"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="contact__social-link" aria-label="Instagram"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="contact__social-link" aria-label="Twitter"><i
+                                        class="fab fa-twitter"></i></a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Formulario de envío de artículos -->
                     <form action="#" class="contact__form">
                         <div class="form__group">
@@ -297,13 +404,13 @@
                                     <span class="form__line"></span>
                                 </div>
                             </div>
-                            
+
                             <div class="form__field">
                                 <input type="text" id="article-title" class="form__input" required>
                                 <label for="article-title" class="form__label">Título del Artículo</label>
                                 <span class="form__line"></span>
                             </div>
-                            
+
                             <div class="form__field">
                                 <select id="category" class="form__select" required>
                                     <option value="" disabled selected></option>
@@ -317,16 +424,17 @@
                                 <label for="category" class="form__label">Categoría del Artículo</label>
                                 <span class="form__line"></span>
                             </div>
-                            
+
                             <div class="form__field">
                                 <textarea id="summary" class="form__textarea" rows="3" required></textarea>
                                 <label for="summary" class="form__label">Resumen (Máx. 150 palabras)</label>
                                 <span class="form__line"></span>
                             </div>
-                            
+
                             <div class="form__field">
                                 <div class="file-upload">
-                                    <input type="file" id="article-file" class="file-upload__input" accept=".doc,.docx,.pdf" required>
+                                    <input type="file" id="article-file" class="file-upload__input"
+                                        accept=".doc,.docx,.pdf" required>
                                     <label for="article-file" class="file-upload__label">
                                         <i class="fas fa-upload"></i>
                                         <span>Sube tu artículo</span>
@@ -336,7 +444,7 @@
                                     <div id="article-file-error" class="file-upload__error"></div>
                                 </div>
                             </div>
-                            
+
                             <div class="form__field">
                                 <div class="file-upload">
                                     <input type="file" id="images" class="file-upload__input" accept="image/*" multiple>
@@ -349,17 +457,19 @@
                                     <div id="images-error" class="file-upload__error"></div>
                                 </div>
                             </div>
-                            
+
                             <div class="form__field">
                                 <div class="form__char-counter">
                                     <span id="word-count">0</span> palabras (mínimo 50)
                                 </div>
                             </div>
-                            
+
                             <div class="form__footer">
                                 <div class="form__privacy">
                                     <input type="checkbox" id="terms" class="form__checkbox" required>
-                                    <label for="terms" class="form__privacy-text">Acepto los <a href="#" class="form__privacy-link">términos y condiciones</a> y la <a href="#" class="form__privacy-link">política de privacidad</a></label>
+                                    <label for="terms" class="form__privacy-text">Acepto los <a href="#"
+                                            class="form__privacy-link">términos y condiciones</a> y la <a href="#"
+                                            class="form__privacy-link">política de privacidad</a></label>
                                 </div>
                                 <button type="submit" class="btn btn--primary form__submit">
                                     <span>Enviar Mensaje</span>
@@ -369,7 +479,7 @@
                         </div>
                     </form>
                 </div>
-                
+
                 <!-- Mapa de ubicación -->
 
             </div>
@@ -385,7 +495,7 @@
                 <h2 class="section-title">Explora Nuestros Artículos</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <div class="glide__slides">
@@ -393,7 +503,8 @@
                         <div class="glide__slide">
                             <article class="carousel-card">
                                 <div class="carousel-card__image">
-                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Diseño Web">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                        alt="Diseño Web">
                                     <span class="carousel-card__badge">Nuevo</span>
                                 </div>
                                 <div class="carousel-card__content">
@@ -401,18 +512,22 @@
                                         <span class="carousel-card__category">Diseño Web</span>
                                         <span class="carousel-card__date">15 Jun 2023</span>
                                     </div>
-                                    <h3 class="carousel-card__title">Guía completa de accesibilidad web para desarrolladores</h3>
-                                    <p class="carousel-card__excerpt">Aprende a crear sitios web accesibles que cumplan con los estándares WCAG 2.1.</p>
-                                    <a href="#" class="carousel-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                                    <h3 class="carousel-card__title">Guía completa de accesibilidad web para
+                                        desarrolladores</h3>
+                                    <p class="carousel-card__excerpt">Aprende a crear sitios web accesibles que cumplan
+                                        con los estándares WCAG 2.1.</p>
+                                    <a href="#" class="carousel-card__link">Leer más <i
+                                            class="fas fa-arrow-right"></i></a>
                                 </div>
                             </article>
                         </div>
-                        
+
                         <!-- Slide 2 -->
                         <div class="glide__slide">
                             <article class="carousel-card">
                                 <div class="carousel-card__image">
-                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Diseño UX/UI">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                        alt="Diseño UX/UI">
                                     <span class="carousel-card__badge">Popular</span>
                                 </div>
                                 <div class="carousel-card__content">
@@ -420,18 +535,22 @@
                                         <span class="carousel-card__category">UX/UI</span>
                                         <span class="carousel-card__date">10 Jun 2023</span>
                                     </div>
-                                    <h3 class="carousel-card__title">10 principios de diseño UX que todo diseñador debe conocer</h3>
-                                    <p class="carousel-card__excerpt">Los principios fundamentales para crear experiencias de usuario excepcionales.</p>
-                                    <a href="#" class="carousel-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                                    <h3 class="carousel-card__title">10 principios de diseño UX que todo diseñador debe
+                                        conocer</h3>
+                                    <p class="carousel-card__excerpt">Los principios fundamentales para crear
+                                        experiencias de usuario excepcionales.</p>
+                                    <a href="#" class="carousel-card__link">Leer más <i
+                                            class="fas fa-arrow-right"></i></a>
                                 </div>
                             </article>
                         </div>
-                        
+
                         <!-- Slide 3 -->
                         <div class="glide__slide">
                             <article class="carousel-card">
                                 <div class="carousel-card__image">
-                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Programación">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                                        alt="Programación">
                                     <span class="carousel-card__badge">Tutorial</span>
                                 </div>
                                 <div class="carousel-card__content">
@@ -439,25 +558,28 @@
                                         <span class="carousel-card__category">React</span>
                                         <span class="carousel-card__date">5 Jun 2023</span>
                                     </div>
-                                    <h3 class="carousel-card__title">Desarrollo web con React: Mejores prácticas 2023</h3>
-                                    <p class="carousel-card__excerpt">Aprende las mejores prácticas actualizadas para desarrollar aplicaciones modernas con React.</p>
-                                    <a href="#" class="carousel-card__link">Leer más <i class="fas fa-arrow-right"></i></a>
+                                    <h3 class="carousel-card__title">Desarrollo web con React: Mejores prácticas 2023
+                                    </h3>
+                                    <p class="carousel-card__excerpt">Aprende las mejores prácticas actualizadas para
+                                        desarrollar aplicaciones modernas con React.</p>
+                                    <a href="#" class="carousel-card__link">Leer más <i
+                                            class="fas fa-arrow-right"></i></a>
                                 </div>
                             </article>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Controles de navegación -->
                 <div class="glide__controls">
                     <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    
+
                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
                         <i class="fas fa-chevron-right"></i>
                     </button>
-                    
+
                     <div class="glide__bullets" data-glide-el="controls[nav]">
                         <button class="glide__bullet" data-glide-dir="=0"></button>
                         <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -487,29 +609,34 @@
                             <span class="article-date">15 Junio 2023</span>
                         </div>
                         <h3 class="article-title">El futuro del diseño web en 2023: Tendencias y predicciones</h3>
-                        <p class="article-excerpt">Exploramos las tendencias más innovadoras que están dando forma al diseño web este año y cómo implementarlas en tus proyectos.</p>
+                        <p class="article-excerpt">Exploramos las tendencias más innovadoras que están dando forma al
+                            diseño web este año y cómo implementarlas en tus proyectos.</p>
                         <div class="article-footer">
                             <div class="author-info">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Autor" class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Autor"
+                                    class="author-avatar">
                                 <span class="author-name">María González</span>
                             </div>
                             <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Diseño web moderno">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+                            alt="Diseño web moderno">
                     </div>
                 </article>
 
                 <!-- Artículo secundario 1 -->
                 <article class="article-card">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Desarrollo web">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Desarrollo web">
                     </div>
                     <div class="article-content">
                         <span class="article-badge">Nuevo</span>
                         <h3 class="article-title">Guía completa de accesibilidad web para desarrolladores</h3>
-                        <p class="article-excerpt">Aprende a crear sitios web accesibles que cumplan con los estándares WCAG 2.1.</p>
+                        <p class="article-excerpt">Aprende a crear sitios web accesibles que cumplan con los estándares
+                            WCAG 2.1.</p>
                         <div class="article-footer">
                             <span class="article-date">10 Jun 2023</span>
                             <a href="#" class="read-more"><i class="fas fa-arrow-right"></i></a>
@@ -520,12 +647,14 @@
                 <!-- Artículo secundario 2 -->
                 <article class="article-card">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Diseño UX/UI">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Diseño UX/UI">
                     </div>
                     <div class="article-content">
                         <span class="article-badge">Popular</span>
                         <h3 class="article-title">10 principios de diseño UX que todo diseñador debe conocer</h3>
-                        <p class="article-excerpt">Los principios fundamentales para crear experiencias de usuario excepcionales.</p>
+                        <p class="article-excerpt">Los principios fundamentales para crear experiencias de usuario
+                            excepcionales.</p>
                         <div class="article-footer">
                             <span class="article-date">5 Jun 2023</span>
                             <a href="#" class="read-more"><i class="fas fa-arrow-right"></i></a>
@@ -536,12 +665,14 @@
                 <!-- Artículo secundario 3 -->
                 <article class="article-card">
                     <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Programación">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Programación">
                     </div>
                     <div class="article-content">
                         <span class="article-badge">Tutorial</span>
                         <h3 class="article-title">Desarrollo web con React: Mejores prácticas 2023</h3>
-                        <p class="article-excerpt">Aprende las mejores prácticas actualizadas para desarrollar aplicaciones modernas con React.</p>
+                        <p class="article-excerpt">Aprende las mejores prácticas actualizadas para desarrollar
+                            aplicaciones modernas con React.</p>
                         <div class="article-footer">
                             <span class="article-date">1 Jun 2023</span>
                             <a href="#" class="read-more"><i class="fas fa-arrow-right"></i></a>
@@ -573,7 +704,8 @@
                         <div class="article-badge">Nuevo</div>
                         <a href="#" class="article-image-link">
                             <div class="article-image">
-                                <img src="https://source.unsplash.com/random/600x400/?design,1" alt="Diseño de interfaces modernas" loading="lazy">
+                                <img src="https://source.unsplash.com/random/600x400/?design,1"
+                                    alt="Diseño de interfaces modernas" loading="lazy">
                                 <div class="article-overlay"></div>
                             </div>
                         </a>
@@ -585,10 +717,12 @@
                             <h3 class="article-title">
                                 <a href="#">Tendencias en diseño de interfaces para 2024</a>
                             </h3>
-                            <p class="article-excerpt">Explora las últimas tendencias en diseño de interfaces que están definiendo el próximo año en el mundo digital.</p>
+                            <p class="article-excerpt">Explora las últimas tendencias en diseño de interfaces que están
+                                definiendo el próximo año en el mundo digital.</p>
                             <div class="article-footer">
                                 <div class="author-info">
-                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Autor" class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Autor"
+                                        class="author-avatar">
                                     <span class="author-name">María López</span>
                                 </div>
                                 <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
@@ -603,7 +737,8 @@
                         <div class="article-badge">Guía</div>
                         <a href="#" class="article-image-link">
                             <div class="article-image">
-                                <img src="https://source.unsplash.com/random/600x400/?typography,1" alt="Tipografía creativa" loading="lazy">
+                                <img src="https://source.unsplash.com/random/600x400/?typography,1"
+                                    alt="Tipografía creativa" loading="lazy">
                                 <div class="article-overlay"></div>
                             </div>
                         </a>
@@ -615,10 +750,12 @@
                             <h3 class="article-title">
                                 <a href="#">Guía completa de tipografía para diseñadores</a>
                             </h3>
-                            <p class="article-excerpt">Todo lo que necesitas saber sobre tipografía, desde conceptos básicos hasta técnicas avanzadas de jerarquía visual.</p>
+                            <p class="article-excerpt">Todo lo que necesitas saber sobre tipografía, desde conceptos
+                                básicos hasta técnicas avanzadas de jerarquía visual.</p>
                             <div class="article-footer">
                                 <div class="author-info">
-                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Autor" class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Autor"
+                                        class="author-avatar">
                                     <span class="author-name">Carlos Mendez</span>
                                 </div>
                                 <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
@@ -633,7 +770,8 @@
                         <div class="article-badge">Tutorial</div>
                         <a href="#" class="article-image-link">
                             <div class="article-image">
-                                <img src="https://source.unsplash.com/random/600x400/?illustration,1" alt="Ilustración digital" loading="lazy">
+                                <img src="https://source.unsplash.com/random/600x400/?illustration,1"
+                                    alt="Ilustración digital" loading="lazy">
                                 <div class="article-overlay"></div>
                             </div>
                         </a>
@@ -645,10 +783,12 @@
                             <h3 class="article-title">
                                 <a href="#">Técnicas avanzadas de ilustración digital en Procreate</a>
                             </h3>
-                            <p class="article-excerpt">Aprende a dominar las herramientas avanzadas de Procreate para crear ilustraciones profesionales.</p>
+                            <p class="article-excerpt">Aprende a dominar las herramientas avanzadas de Procreate para
+                                crear ilustraciones profesionales.</p>
                             <div class="article-footer">
                                 <div class="author-info">
-                                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Autor" class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Autor"
+                                        class="author-avatar">
                                     <span class="author-name">Ana Torres</span>
                                 </div>
                                 <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
@@ -663,7 +803,8 @@
                         <div class="article-badge">Análisis</div>
                         <a href="#" class="article-image-link">
                             <div class="article-image">
-                                <img src="https://source.unsplash.com/random/600x400/?branding,1" alt="Identidad de marca" loading="lazy">
+                                <img src="https://source.unsplash.com/random/600x400/?branding,1"
+                                    alt="Identidad de marca" loading="lazy">
                                 <div class="article-overlay"></div>
                             </div>
                         </a>
@@ -675,10 +816,12 @@
                             <h3 class="article-title">
                                 <a href="#">Cómo crear una identidad de marca memorable</a>
                             </h3>
-                            <p class="article-excerpt">Los elementos clave para desarrollar una identidad de marca que destaque y conecte con tu audiencia objetivo.</p>
+                            <p class="article-excerpt">Los elementos clave para desarrollar una identidad de marca que
+                                destaque y conecte con tu audiencia objetivo.</p>
                             <div class="article-footer">
                                 <div class="author-info">
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Autor" class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Autor"
+                                        class="author-avatar">
                                     <span class="author-name">Javier Ruiz</span>
                                 </div>
                                 <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
@@ -693,7 +836,8 @@
                         <div class="article-badge">Recursos</div>
                         <a href="#" class="article-image-link">
                             <div class="article-image">
-                                <img src="https://source.unsplash.com/random/600x400/?webdesign,1" alt="Diseño web" loading="lazy">
+                                <img src="https://source.unsplash.com/random/600x400/?webdesign,1" alt="Diseño web"
+                                    loading="lazy">
                                 <div class="article-overlay"></div>
                             </div>
                         </a>
@@ -705,10 +849,12 @@
                             <h3 class="article-title">
                                 <a href="#">Las mejores herramientas para diseñadores web en 2024</a>
                             </h3>
-                            <p class="article-excerpt">Una selección actualizada de las herramientas más útiles para diseñadores y desarrolladores web.</p>
+                            <p class="article-excerpt">Una selección actualizada de las herramientas más útiles para
+                                diseñadores y desarrolladores web.</p>
                             <div class="article-footer">
                                 <div class="author-info">
-                                    <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Autor" class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Autor"
+                                        class="author-avatar">
                                     <span class="author-name">Laura García</span>
                                 </div>
                                 <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
@@ -723,7 +869,8 @@
                         <div class="article-badge">Inspiración</div>
                         <a href="#" class="article-image-link">
                             <div class="article-image">
-                                <img src="https://source.unsplash.com/random/600x400/?art,1" alt="Arte digital" loading="lazy">
+                                <img src="https://source.unsplash.com/random/600x400/?art,1" alt="Arte digital"
+                                    loading="lazy">
                                 <div class="article-overlay"></div>
                             </div>
                         </a>
@@ -735,10 +882,12 @@
                             <h3 class="article-title">
                                 <a href="#">Artistas digitales que están revolucionando la industria</a>
                             </h3>
-                            <p class="article-excerpt">Conoce a los artistas digitales más influyentes del momento y descubre qué los hace únicos en su campo.</p>
+                            <p class="article-excerpt">Conoce a los artistas digitales más influyentes del momento y
+                                descubre qué los hace únicos en su campo.</p>
                             <div class="article-footer">
                                 <div class="author-info">
-                                    <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Autor" class="author-avatar">
+                                    <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Autor"
+                                        class="author-avatar">
                                     <span class="author-name">Roberto Sánchez</span>
                                 </div>
                                 <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
@@ -763,12 +912,18 @@
                         <div class="footer__logo">
                             <h3>Retícula<span>Creativa</span></h3>
                         </div>
-                        <p class="footer__description">Blog especializado en diseño gráfico, desarrollo web y creatividad digital. Compartimos conocimientos, tutoriales y recursos para la comunidad de diseño.</p>
+                        <p class="footer__description">Blog especializado en diseño gráfico, desarrollo web y
+                            creatividad digital. Compartimos conocimientos, tutoriales y recursos para la comunidad de
+                            diseño.</p>
                         <div class="footer__social">
-                            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="footer__social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#" class="footer__social-link" aria-label="Pinterest"><i
+                                    class="fab fa-pinterest"></i></a>
                         </div>
                     </div>
 
@@ -795,18 +950,24 @@
                     <div class="footer__col">
                         <h4 class="footer__title">Categorías</h4>
                         <ul class="footer__categories">
-                            <li><a href="#" class="footer__category-link">Diseño Gráfico <span class="footer__category-count">12</span></a></li>
-                            <li><a href="#" class="footer__category-link">Desarrollo Web <span class="footer__category-count">8</span></a></li>
-                            <li><a href="#" class="footer__category-link">Branding <span class="footer__category-count">5</span></a></li>
-                            <li><a href="#" class="footer__category-link">Tutoriales <span class="footer__category-count">15</span></a></li>
-                            <li><a href="#" class="footer__category-link">Recursos Gratuitos <span class="footer__category-count">7</span></a></li>
+                            <li><a href="#" class="footer__category-link">Diseño Gráfico <span
+                                        class="footer__category-count">12</span></a></li>
+                            <li><a href="#" class="footer__category-link">Desarrollo Web <span
+                                        class="footer__category-count">8</span></a></li>
+                            <li><a href="#" class="footer__category-link">Branding <span
+                                        class="footer__category-count">5</span></a></li>
+                            <li><a href="#" class="footer__category-link">Tutoriales <span
+                                        class="footer__category-count">15</span></a></li>
+                            <li><a href="#" class="footer__category-link">Recursos Gratuitos <span
+                                        class="footer__category-count">7</span></a></li>
                         </ul>
                     </div>
 
                     <!-- Columna 4: Suscripción al blog -->
                     <div class="footer__col">
                         <h4 class="footer__title">Suscríbete al Blog</h4>
-                        <p class="footer__text">Recibe las últimas publicaciones y recursos gratuitos directamente en tu correo.</p>
+                        <p class="footer__text">Recibe las últimas publicaciones y recursos gratuitos directamente en tu
+                            correo.</p>
                         <form class="footer__subscribe-form">
                             <div class="footer__form-group">
                                 <input type="email" placeholder="Tu correo electrónico" class="footer__input" required>
@@ -827,7 +988,7 @@
             <div class="container">
                 <div class="footer__bottom-content">
                     <p class="footer__copyright">
-                        &copy; <span id="current-year">2023</span> Retícula Creativa. 
+                        &copy; <span id="current-year">2023</span> Retícula Creativa.
                         <span class="footer__rights">Todos los derechos reservados.</span>
                     </p>
                     <div class="footer__legal">
@@ -843,14 +1004,14 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Toggle para la sección de requisitos
             const requirementsToggle = document.querySelector('.requirements__toggle');
             if (requirementsToggle) {
-                requirementsToggle.addEventListener('click', function() {
+                requirementsToggle.addEventListener('click', function () {
                     const expanded = this.getAttribute('aria-expanded') === 'true' || false;
                     this.setAttribute('aria-expanded', !expanded);
-                    
+
                     // Animación del ícono
                     const icon = this.querySelector('i');
                     if (expanded) {
@@ -868,17 +1029,17 @@
             const imagesError = document.getElementById('images-error');
             const summaryInput = document.querySelector('textarea[name="summary"]');
             const wordCountElement = document.getElementById('word-count');
-            
+
             // Configuración
             const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
             const MAX_IMAGES = 3;
             const MIN_WORDS = 50;
-            
+
             // Validación y vista previa del archivo de artículo
-            articleFileInput.addEventListener('change', function(e) {
+            articleFileInput.addEventListener('change', function (e) {
                 const file = e.target.files[0];
                 const validTypes = ['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/pdf'];
-                
+
                 // Validar tipo de archivo
                 if (!validTypes.includes(file.type)) {
                     showError(articleFileError, 'Formato de archivo no válido. Por favor, sube un archivo DOC, DOCX o PDF.');
@@ -886,7 +1047,7 @@
                     articleFileName.textContent = '';
                     return;
                 }
-                
+
                 // Validar tamaño de archivo
                 if (file.size > MAX_FILE_SIZE) {
                     showError(articleFileError, 'El archivo es demasiado grande. El tamaño máximo permitido es de 5MB.');
@@ -894,26 +1055,26 @@
                     articleFileName.textContent = '';
                     return;
                 }
-                
+
                 // Mostrar nombre del archivo
                 articleFileName.innerHTML = `<i class="fas fa-file-alt"></i> ${file.name} (${formatFileSize(file.size)})`;
                 articleFileError.style.display = 'none';
             });
-            
+
             // Validación y vista previa de imágenes
-            imagesInput.addEventListener('change', function(e) {
+            imagesInput.addEventListener('change', function (e) {
                 const files = Array.from(e.target.files);
-                
+
                 // Validar cantidad de imágenes
                 if (files.length > MAX_IMAGES) {
                     showError(imagesError, `Solo puedes subir un máximo de ${MAX_IMAGES} imágenes.`);
                     imagesInput.value = '';
                     return;
                 }
-                
+
                 // Limpiar vista previa anterior
                 imagesPreview.innerHTML = '';
-                
+
                 // Procesar cada imagen
                 files.forEach((file, index) => {
                     // Validar tipo de archivo
@@ -921,16 +1082,16 @@
                         showError(imagesError, `El archivo "${file.name}" no es una imagen válida.`);
                         return;
                     }
-                    
+
                     // Validar tamaño de archivo
                     if (file.size > MAX_FILE_SIZE) {
                         showError(imagesError, `La imagen "${file.name}" es demasiado grande. El tamaño máximo permitido es de 5MB.`);
                         return;
                     }
-                    
+
                     // Crear vista previa
                     const reader = new FileReader();
-                    reader.onload = function(e) {
+                    reader.onload = function (e) {
                         const previewItem = document.createElement('div');
                         previewItem.className = 'file-upload__preview-item';
                         previewItem.innerHTML = `
@@ -940,25 +1101,25 @@
                             </button>
                         `;
                         imagesPreview.appendChild(previewItem);
-                        
+
                         // Agregar evento de eliminación
                         const removeBtn = previewItem.querySelector('.file-upload__preview-item-remove');
-                        removeBtn.addEventListener('click', function() {
+                        removeBtn.addEventListener('click', function () {
                             removeImage(index);
                         });
                     };
                     reader.readAsDataURL(file);
                 });
-                
+
                 imagesError.style.display = 'none';
             });
-            
+
             // Contador de palabras para el resumen
             if (summaryInput) {
-                summaryInput.addEventListener('input', function() {
+                summaryInput.addEventListener('input', function () {
                     const words = this.value.trim() === '' ? 0 : this.value.trim().split(/\s+/).length;
                     wordCountElement.textContent = words;
-                    
+
                     if (words < MIN_WORDS) {
                         wordCountElement.style.color = '#e74c3c';
                     } else {
@@ -966,37 +1127,37 @@
                     }
                 });
             }
-            
+
             // Función para eliminar una imagen de la vista previa
             function removeImage(index) {
                 const dt = new DataTransfer();
                 const input = imagesInput;
                 const { files } = input;
-                
+
                 for (let i = 0; i < files.length; i++) {
                     if (index !== i) {
                         dt.items.add(files[i]);
                     }
                 }
-                
+
                 input.files = dt.files;
-                
+
                 // Disparar evento change para actualizar la vista previa
                 const event = new Event('change');
                 input.dispatchEvent(event);
             }
-            
+
             // Función para mostrar mensajes de error
             function showError(element, message) {
                 element.textContent = message;
                 element.style.display = 'block';
-                
+
                 // Ocultar el mensaje después de 5 segundos
                 setTimeout(() => {
                     element.style.display = 'none';
                 }, 5000);
             }
-            
+
             // Función para formatear el tamaño del archivo
             function formatFileSize(bytes) {
                 if (bytes === 0) return '0 Bytes';
@@ -1005,11 +1166,11 @@
                 const i = Math.floor(Math.log(bytes) / Math.log(k));
                 return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
             }
-            
+
             // Validación del formulario antes de enviar
             const form = document.querySelector('.contact__form form');
             if (form) {
-                form.addEventListener('submit', function(e) {
+                form.addEventListener('submit', function (e) {
                     // Validar archivo de artículo
                     if (!articleFileInput.files.length) {
                         e.preventDefault();
@@ -1017,20 +1178,20 @@
                         articleFileInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         return false;
                     }
-                    
+
                     // Validar resumen
                     const summary = summaryInput ? summaryInput.value.trim() : '';
                     const wordCount = summary === '' ? 0 : summary.split(/\s+/).length;
-                    
+
                     if (wordCount < MIN_WORDS) {
                         e.preventDefault();
                         showError(summaryInput.nextElementSibling, `El resumen debe tener al menos ${MIN_WORDS} palabras.`);
                         summaryInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         return false;
                     }
-                    
+
                     // Aquí podrías agregar más validaciones si es necesario
-                    
+
                     // Mostrar indicador de carga
                     const submitBtn = form.querySelector('button[type="submit"]');
                     if (submitBtn) {
@@ -1041,12 +1202,36 @@
             }
         });
     </script>
-    <!-- Glide.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="script.js"></script>
-    <!-- Anime.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="js/animations.js"></script>
+
+    <!-- Lazy Loading for Images -->
+    <script>
+        // Implementar lazy loading para imágenes que no lo tengan
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('img:not([loading])');
+
+            // Excluir imágenes del hero (above the fold)
+            const heroSection = document.querySelector('.hero');
+            const heroImages = heroSection ? heroSection.querySelectorAll('img') : [];
+
+            images.forEach(img => {
+                // No aplicar lazy loading a imágenes del hero
+                if (!Array.from(heroImages).includes(img)) {
+                    img.setAttribute('loading', 'lazy');
+                }
+            });
+
+            console.log('✅ Lazy loading aplicado a', images.length - heroImages.length, 'imágenes');
+        });
+    </script>
+
+    <!-- External Scripts with defer for performance -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+
+    <!-- Local Scripts with defer -->
+    <script src="js/carousel.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>

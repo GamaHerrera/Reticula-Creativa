@@ -3,7 +3,7 @@
  * Utilizando anime.js para animaciones fluidas y personalizadas
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Verificar si anime.js está cargado
     if (typeof anime === 'undefined') {
         console.warn('anime.js no está cargado. Las animaciones no funcionarán correctamente.');
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         stats.forEach(stat => {
             const value = parseInt(stat.textContent);
             const suffix = stat.getAttribute('data-suffix') || '';
-            
+
             anime({
                 targets: stat,
                 textContent: [0, value],
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 duration: 2000,
                 delay: 500,
                 easing: 'easeOutExpo',
-                update: function(anim) {
+                update: function (anim) {
                     stat.textContent = Math.floor(anim.animations[0].currentValue) + suffix;
                 }
             });
@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Manejar animaciones al hacer scroll
     const handleScrollAnimations = () => {
         const animatedSections = document.querySelectorAll('[data-animate]');
-        
+
         animatedSections.forEach(section => {
             if (isInViewport(section) && !section.classList.contains('animated')) {
                 section.classList.add('animated');
-                
-                switch(section.getAttribute('data-animate')) {
+
+                switch (section.getAttribute('data-animate')) {
                     case 'features':
                         animateFeatures();
                         break;
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const initAnimations = () => {
         // Animación inicial del hero
         heroAnimation();
-        
+
         // Configurar observador de intersección para animaciones al hacer scroll
         const observerOptions = {
             root: null,
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función eliminada: setupThemeSwitcher
     // Se ha eliminado la funcionalidad de tema oscuro
-    
+
     // Mejorar la función de animación al hacer scroll
     const setupScrollAnimations = () => {
         const observerOptions = {
@@ -221,19 +221,10 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(element);
         });
     };
-    
+
     // Inicializar animaciones cuando el DOM esté completamente cargado
-    const initAll = () => {
-        initAnimations();
-        setupThemeSwitcher();
-        setupScrollAnimations();
-    };
-    
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initAll);
-    } else {
-        initAll();
-    }
+    initAnimations();
+    setupScrollAnimations();
 
     // Agregar clase al hacer hover en los botones
     const buttons = document.querySelectorAll('.btn');
@@ -259,12 +250,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animación suave para los enlaces de navegación
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({

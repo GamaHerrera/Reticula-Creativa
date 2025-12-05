@@ -1,0 +1,319 @@
+/* ===== ACCESSIBILITY STYLES - Retícula Creativa ===== */
+/* Mejoras de accesibilidad y navegación por teclado */
+
+/* ========================================
+   SKIP LINK
+   ======================================== */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 10000;
+    font-weight: 600;
+    border-radius: 0 0 4px 0;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid var(--highlight-color);
+    outline-offset: 2px;
+}
+
+/* ========================================
+   FOCUS VISIBLE
+   ======================================== */
+
+/* Mejorar visibilidad del focus para navegación por teclado */
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Focus específico para botones */
+button:focus-visible,
+.btn:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* Focus para enlaces */
+a:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    text-decoration: underline;
+}
+
+/* Focus para inputs */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 0;
+    border-color: var(--primary-color);
+}
+
+/* ========================================
+   CONTRASTE MEJORADO
+   ======================================== */
+
+/* Mejorar contraste de texto secundario */
+.text-light,
+.article-excerpt,
+.carousel-card__excerpt {
+    color: #555555 !important;
+    /* Mejorado de #666666 para mejor contraste */
+}
+
+.article-date,
+.carousel-card__date,
+.footer__post-date {
+    color: #666666 !important;
+    /* Mejorado de #999999 */
+}
+
+/* ========================================
+   NAVEGACIÓN POR TECLADO
+   ======================================== */
+
+/* Asegurar que elementos interactivos sean accesibles */
+.nav__toggle:focus-visible,
+.nav__close:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+    background-color: rgba(255, 107, 107, 0.1);
+}
+
+/* Mejorar visibilidad de enlaces en el menú */
+.nav__link:focus-visible {
+    background-color: rgba(255, 107, 107, 0.1);
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+}
+
+/* ========================================
+   ARIA Y SCREEN READERS
+   ======================================== */
+
+/* Ocultar visualmente pero mantener para screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Mostrar cuando tiene focus */
+.sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* ========================================
+   TAMAÑO MÍNIMO DE TOQUE (MÓVIL)
+   ======================================== */
+
+/* Asegurar que elementos táctiles tengan al menos 44x44px */
+@media (max-width: 768px) {
+
+    button,
+    .btn,
+    .nav__link,
+    .nav__toggle,
+    .nav__close,
+    a[role="button"] {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* ========================================
+   REDUCCIÓN DE MOVIMIENTO
+   ======================================== */
+
+/* Respetar preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* ========================================
+   ALTO CONTRASTE
+   ======================================== */
+
+/* Soporte para modo de alto contraste */
+@media (prefers-contrast: high) {
+    :root {
+        --text-color: #000000;
+        --text-light: #333333;
+        --background-color: #FFFFFF;
+    }
+
+    .btn--primary {
+        border: 2px solid #000000;
+    }
+
+    .nav__link::after {
+        height: 3px;
+    }
+}
+
+/* ========================================
+   MODO OSCURO (PREPARADO)
+   ======================================== */
+
+/* Preparado para implementación futura de modo oscuro */
+@media (prefers-color-scheme: dark) {
+    /* Descomentar cuando se implemente modo oscuro
+  :root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --text-light: #cccccc;
+    --card-bg: #2a2a2a;
+    --border-color: #404040;
+    --background-color: #121212;
+  }
+  */
+}
+
+/* ========================================
+   MEJORAS DE LEGIBILIDAD
+   ======================================== */
+
+/* Mejorar legibilidad de texto largo */
+.article-excerpt,
+.about__description,
+.contact__card-text {
+    line-height: 1.7;
+    max-width: 70ch;
+    /* Ancho óptimo para lectura */
+}
+
+/* Espaciado mejorado para listas */
+ul,
+ol {
+    line-height: 1.7;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   ESTADOS DE ERROR ACCESIBLES
+   ======================================== */
+
+/* Mejorar visibilidad de errores en formularios */
+.form__field.error input,
+.form__field.error textarea,
+.form__field.error select {
+    border-color: #d32f2f;
+    background-color: #ffebee;
+}
+
+.form__field.error .form__label {
+    color: #d32f2f;
+}
+
+/* Mensaje de error visible */
+.form__error-message {
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form__error-message::before {
+    content: "⚠";
+    font-weight: bold;
+}
+
+/* ========================================
+   TOOLTIPS ACCESIBLES
+   ======================================== */
+
+/* Tooltips que funcionan con teclado */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    background: var(--text-color);
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   TABLAS ACCESIBLES
+   ======================================== */
+
+/* Mejorar accesibilidad de tablas si se usan */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    font-weight: 600;
+    background-color: var(--gray-light);
+    padding: 0.75rem;
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Scroll horizontal en tablas en móvil */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}

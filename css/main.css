@@ -1,0 +1,22 @@
+/* ===== MAIN CSS - Retícula Creativa ===== */
+/* Archivo principal que importa todos los módulos CSS */
+
+/* Importar estilos base */
+@import url('base.css');
+
+/* Importar estilos originales (temporal - se migrará gradualmente) */
+@import url('../styles.css');
+
+/* Importar correcciones responsive */
+@import url('responsive.css');
+
+/* Importar mejoras de accesibilidad */
+@import url('accessibility.css');
+
+/* 
+ * NOTA: Este archivo es temporal durante la migración.
+ * Eventualmente, styles.css será reemplazado por módulos específicos:
+ * - components.css (navegación, tarjetas, formularios, etc.)
+ * - layout.css (secciones, grids, responsive)
+ * - utilities.css (helpers, animaciones)
+ */

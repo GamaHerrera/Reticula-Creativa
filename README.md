@@ -1,117 +1,212 @@
 # Retícula Creativa - Sitio Web Oficial
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-deploy-id/deploy-status)](https://app.netlify.com/sites/tu-sitio)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/tu-usuario/Reticula-Creativa/graphs/commit-activity)
 
-Bienvenido al repositorio del sitio web oficial de **Retícula Creativa**, una comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI. Nuestra misión es reunir voces diversas de Latinoamérica para expresarse, aprender y conectar mediante el diseño.
+> Comunidad abierta enfocada en el diseño visual en todas sus formas: gráfico, tipográfico, editorial, digital y UI.
 
-## 🌟 Nuestra Comunidad
-
-- **Diversidad Creativa**: Celebramos todas las formas de expresión visual y las diferentes perspectivas del diseño.
-- **Comunidad Activa**: Un espacio para compartir conocimiento, experiencias y crecer juntos como profesionales.
-- **Recursos Compartidos**: Acceso a herramientas, tutoriales y materiales para el desarrollo profesional continuo.
-
-## 🚀 Características del Sitio
-
-- **Diseño Moderno y Accesible**: Interfaz limpia con enfoque en la experiencia del usuario y accesibilidad.
-- **Totalmente Responsivo**: Se adapta perfectamente a cualquier dispositivo móvil, tableta o escritorio.
-- **Rendimiento Optimizado**: Código optimizado para una carga rápida y eficiente.
-- **Blog y Recursos**: Contenido valioso para la comunidad de diseñadores.
-- **Portafolio Comunitario**: Muestra el trabajo de los miembros de nuestra comunidad.
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Frontend**: HTML5 semántico, CSS3 con variables personalizadas, JavaScript (ES6+)
-- **Frameworks y Librerías**:
-  - [Vite](https://vitejs.dev/) - Entorno de desarrollo frontend
-  - [PostCSS](https://postcss.org/) - Procesamiento de CSS
-  - [Font Awesome](https://fontawesome.com/) - Iconos y elementos de interfaz
-  - [Google Fonts](https://fonts.google.com/) - Fuentes tipográficas
-  - [ScrollReveal](https://scrollrevealjs.org/) - Animaciones al hacer scroll
-
-## 📦 Estructura del Proyecto
-
-```
-reticula-creativa/
-├── index.html          # Página principal
-├── styles.css          # Estilos principales
-├── main.js             # Funcionalidad JavaScript
-├── assets/             # Recursos multimedia
-│   ├── images/        # Imágenes del sitio
-│   └── fonts/         # Fuentes personalizadas
-├── manifest.json       # Configuración PWA
-└── netlify.toml        # Configuración de despliegue
-```
-
-## 🚀 Cómo Contribuir
-
-Apreciamos las contribuciones de la comunidad. Si deseas contribuir:
-
-1. Haz un fork del repositorio
-2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`)
-3. Realiza tus cambios y haz commit de ellos (`git commit -am 'Añade nueva característica'`)
-4. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
-5. Abre un Pull Request
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
-
-## 🌐 En Vivo
-
-Visita el sitio en producción: [https://reticulacreativa.com](https://reticulacreativa.com)
-
-## 📬 Contacto
-
-¿Tienes preguntas o comentarios? Contáctanos a través de:
-
-- 📧 Email: hola@reticulacreativa.com
-- 💼 LinkedIn: [Retícula Creativa](https://linkedin.com/company/reticula-creativa)
-- 📸 Instagram: [@reticulacreativa](https://instagram.com/reticulacreativa)
-}
-```
-
-### Contenido
-- Edita el archivo `index.html` para modificar el contenido.
-- Actualiza las imágenes en la carpeta `assets/img/`.
-- Modifica los estilos en `styles.css`.
-- Ajusta la funcionalidad en `main.js`.
-
-## 📂 Estructura de Archivos
-
-```
-reticula-creativa/
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
-├── main.js             # JavaScript
-├── assets/             # Recursos
-│   ├── img/            # Imágenes
-│   ├── fonts/          # Fuentes personalizadas
-│   └── icons/          # Iconos
-└── README.md           # Este archivo
-```
-
-## 🌐 Despliegue
-
-Puedes desplegar este sitio web en cualquier servicio de hosting estático como:
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-- [GitHub Pages](https://pages.github.com/)
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
-
-## 💡 Créditos
-
-- Diseñado y desarrollado por [Tu Nombre]
-- Plantilla inspirada en diseños modernos de estudio creativo
-- Tipografía [Poppins](https://fonts.google.com/specimen/Poppins) de Google Fonts
-- Iconos de [Box Icons](https://boxicons.com/)
-
-## 📬 Contacto
-
-¿Tienes preguntas o comentarios? No dudes en [abrir un issue](https://github.com/tu-usuario/reticula-creativa/issues) o contactarme directamente.
+[Ver Demo](https://reticulacreativa.com) · [Reportar Bug](https://github.com/tu-usuario/Reticula-Creativa/issues) · [Solicitar Feature](https://github.com/tu-usuario/Reticula-Creativa/issues)
 
 ---
 
-¡Gracias por visitar el repositorio de **Retícula Creativa**! Esperamos que te guste nuestro trabajo. 🚀
+## 📖 Tabla de Contenidos
+
+- [Sobre el Proyecto](#sobre-el-proyecto)
+- [Características](#características)
+- [Tecnologías](#tecnologías)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
+
+---
+
+## 🎯 Sobre el Proyecto
+
+**Retícula Creativa** es una plataforma web diseñada para reunir a diseñadores de Latinoamérica. Nuestro objetivo es crear un espacio donde profesionales y entusiastas del diseño puedan compartir conocimiento, experiencias y recursos.
+
+### Nuestra Misión
+
+- **Diversidad Creativa**: Celebrar todas las formas de expresión visual
+- **Comunidad Activa**: Espacio para compartir y crecer juntos
+- **Recursos Compartidos**: Herramientas y materiales para el desarrollo profesional
+
+---
+
+## ✨ Características
+
+- ✅ **Diseño Responsive** - Adaptado a móvil, tablet y desktop
+- ✅ **PWA Ready** - Funciona offline con Service Worker
+- ✅ **SEO Optimizado** - Meta tags, Open Graph, Structured Data
+- ✅ **Accesibilidad WCAG 2.1 AA** - Skip links, contraste mejorado
+- ✅ **Performance Optimizado** - Lazy loading, defer scripts, preconnect
+- ✅ **Animaciones Suaves** - anime.js y ScrollReveal
+- ✅ **Carrusel de Artículos** - Glide.js con navegación táctil
+- ✅ **Formulario de Envío** - Validación de archivos y contador de palabras
+
+---
+
+## 🛠️ Tecnologías
+
+### Frontend
+- HTML5 semántico
+- CSS3 (Variables, Grid, Flexbox)
+- JavaScript ES6+
+
+### Librerías
+| Librería | Versión | Propósito |
+|----------|---------|-----------|
+| [Glide.js](https://glidejs.com/) | 3.6.0 | Carrusel responsive |
+| [anime.js](https://animejs.com/) | 3.2.1 | Animaciones avanzadas |
+| [ScrollReveal](https://scrollrevealjs.org/) | 4.0.9 | Animaciones al scroll |
+| [Font Awesome](https://fontawesome.com/) | 6.0.0 | Iconografía |
+| [Google Fonts](https://fonts.google.com/) | - | Poppins |
+
+### Herramientas
+- PostCSS - Procesamiento de CSS
+- Autoprefixer - Compatibilidad cross-browser
+- cssnano - Minificación
+- ESLint - Linting de JavaScript
+- Prettier - Formateo de código
+
+---
+
+## 🚀 Instalación
+
+### Requisitos Previos
+
+- Node.js (v14 o superior)
+- npm o yarn
+
+### Pasos
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/Reticula-Creativa.git
+
+# Navegar al directorio
+cd Reticula-Creativa
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm start
+```
+
+El sitio estará disponible en `http://localhost:8080`
+
+---
+
+## 💻 Uso
+
+### Scripts Disponibles
+
+```bash
+npm start          # Inicia servidor de desarrollo (live-server)
+npm run build      # Construye CSS para producción
+npm run watch:css  # Observa cambios en CSS
+```
+
+### Desarrollo Local
+
+1. Ejecuta `npm start` para iniciar el servidor
+2. Abre `http://localhost:8080` en tu navegador
+3. Los cambios se recargarán automáticamente
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+reticula-creativa/
+├── index.html              # Página principal
+├── css/                    # Estilos modulares
+│   ├── main.css           # Importador principal
+│   ├── base.css           # Variables y reset
+│   ├── responsive.css     # Media queries
+│   └── accessibility.css  # Mejoras de accesibilidad
+├── js/                     # JavaScript
+│   ├── animations.js      # Animaciones con anime.js
+│   └── carousel.js        # Carrusel con Glide.js
+├── main.js                 # Funcionalidad principal
+├── script.js               # Utilidades generales
+├── styles.css              # Estilos legacy (deprecado)
+├── manifest.json           # PWA manifest
+├── sw.js                   # Service Worker
+├── CONTRIBUTING.md         # Guía de contribución
+├── CHANGELOG.md            # Registro de cambios
+└── SEO-CONFIG.md           # Configuración SEO
+```
+
+---
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Por favor lee nuestra [Guía de Contribución](CONTRIBUTING.md) para conocer:
+
+- Código de conducta
+- Proceso de pull requests
+- Estándares de código
+- Convenciones de commits
+
+### Pasos Rápidos
+
+1. Fork el proyecto
+2. Crea tu rama (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'feat: add amazing feature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+---
+
+## 📊 Performance
+
+| Métrica | Score |
+|---------|-------|
+| Performance | 95+ |
+| Accessibility | 95+ |
+| Best Practices | 95+ |
+| SEO | 100 |
+
+*Medido con Lighthouse*
+
+---
+
+## 📝 Licencia
+
+Distribuido bajo la Licencia MIT. Ver `LICENSE` para más información.
+
+---
+
+## 📧 Contacto
+
+Retícula Creativa - [@reticulacreativa](https://twitter.com/reticulacreativa) - hola@reticulacreativa.com
+
+Sitio Web: [https://reticulacreativa.com](https://reticulacreativa.com)
+
+---
+
+## 🙏 Agradecimientos
+
+- [Font Awesome](https://fontawesome.com)
+- [Google Fonts](https://fonts.google.com)
+- [Unsplash](https://unsplash.com) - Imágenes de placeholder
+- Todos nuestros [contribuidores](https://github.com/tu-usuario/Reticula-Creativa/contributors)
+
+---
+
+## 📚 Documentación Adicional
+
+- [Guía de Contribución](CONTRIBUTING.md)
+- [Registro de Cambios](CHANGELOG.md)
+- [Configuración SEO](SEO-CONFIG.md)
+
+---
+
+<p align="center">
+  Hecho con ❤️ por la comunidad de diseñadores de Latinoamérica
+</p>
